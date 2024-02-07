@@ -1,5 +1,7 @@
+import { useEffect, useState } from 'react';
 import './App.css'
 import Phone from "./Phone"
+import { useForm } from 'react-hook-form';
 
 let phones = [
     {
@@ -12,7 +14,7 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 13",
         ves: "192 г.",
-        memory: [{ name: "4/128", price:"1 700 000 "}, { name: "6/128", price: ""}, { name: "8/256", price: "" }],
+        memory: [{ name: "4/128", price: "1 700 000 " }, { name: "6/128", price: "" }, { name: "8/256", price: "" }],
         color: [{ name: "#9AFF8B" }, { name: "black" }, { name: "white" }]
     },
     {
@@ -26,8 +28,8 @@ let phones = [
         batery: "5100 мАч",
         os: "Android 13",
         ves: "187 г.",
-        memory: [{ name: "8/256", price: "" }, {name: "12/512", price: ""}],
-        color: [{ name: "black" }, {name: "#50C878"}, {name: "#8182B8"}]
+        memory: [{ name: "8/256", price: "" }, { name: "12/512", price: "" }],
+        color: [{ name: "black" }, { name: "#50C878" }, { name: "#8182B8" }]
     },
     {
         id: 3,
@@ -40,8 +42,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 14",
         ves: " 202 г.",
-        memory: [{ name: "6/128", price: "3 700 000" }, {name: "8/128", price: "3 780 000"}, {name: "8/256", price: "4 120 000"}],
-        color: [{ name: "black" }, {name: "green"}, {name: "white"}]
+        memory: [{ name: "6/128", price: "3 700 000" }, { name: "8/128", price: "3 780 000" }, { name: "8/256", price: "4 120 000" }],
+        color: [{ name: "black" }, { name: "green" }, { name: "white" }]
     },
     // {
     //     id: 3,
@@ -61,11 +63,28 @@ let phones = [
 
 
 function App() {
+    const { register, handleSubmit, watch } = useForm()
+    const [value, setValue] = useState("")
+    const filteredPhones = phones.filter(phone => {
+        return phone.name.toLocaleLowerCase().includes(value.toLocaleLowerCase())
+    })
+
+    useEffect(() => {
+        setValue(watch("name"))
+        console.log(value);
+    }, [watch("name")])
+
+    const onSubmit = (data) => {
+        console.log(data);
+    }
     return (
         <div className="container">
+            <form onSubmit={handleSubmit(onSubmit)}>
+                <input className='w-50 h-10 p-2 rounded-xl border border-black bg-[#ffff00]' type="text" {...register("name")} />
+            </form>
             <div className="w=[90%] flex flex-wrap gap-20 mt-10 justify-center ">
                 {
-                    phones.map(item => (
+                    filteredPhones.map(item => (
                         <Phone key={item.id} item={item} />
                     ))
                 }

@@ -10,6 +10,7 @@ export default function Phone({ item }) {
     } else {
         body.style.overflowY = "scroll"
     }
+
     return (
         <>
             <div key={item.id} onClick={() => setYes(true)} className="phone__card cursor-pointer w-[300px] h-[350px] rounded-xl border-black border-2 flex flex-col overflow-hidden">
