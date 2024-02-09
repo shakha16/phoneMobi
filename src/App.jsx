@@ -633,7 +633,7 @@ let phones = [
         twelveMonth: " 316 825 UZS         "
     },
     {
-        id: 42,
+        id: 42.1,
         name: 'Spark 10 Pro',
         img: 'https://api.idea.uz/storage/products/May2023/j8ngvlwsCdXWT1dnC4EH.png',
         display: "6.8 IPS LCD - 1080 x 2460",
@@ -933,7 +933,7 @@ let phones = [
         twelveMonth: " 1 421 604 UZS         "
     },
     {
-        id: 61,
+        id: 62,
         name: 'iPhone 13  ',
         img: 'https://olcha.uz/image/400x400/products/2022-03-12/apple-iphone-13-128gb-green-40157-0.jpeg',
         display: "6.1 OLED - 1170 x 2532",
@@ -948,7 +948,7 @@ let phones = [
         twelveMonth: " 1 279 504 UZS  "
     },
     {
-        id: 62,
+        id: 63,
         name: 'iPhone 11  ',
         img: 'https://kattabozor.s3.eu-central-1.amazonaws.com/ri/894e36d27f742779dbb43cd139e04bea932e2067ec599bf3a7ee2a22323b1c4a_dI2jsa_480l.jpg',
         display: "6.1 IPS LCD - 828 x 1792",
