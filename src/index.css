@@ -53,6 +53,7 @@
   color: #fff;
 }
 
-body::-webkit-scrollbar {
+body::-webkit-scrollbar, 
+.lla::-webkit-scrollbar {
   width: 0;
 }
