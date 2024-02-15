@@ -162,7 +162,7 @@ let phones = [
         batery: "4400 мАч",
         os: "Android 14",
         ves: "253 г.",
-        memory: [{ name: "12/512", price: " 14 442 000 UZS         " }, { name: "12/256", price: " 15 065 000 UZS         " }],
+        memory: [{ name: "12/512", price: "15 065 000 UZS  " }, { name: "12/256", price: " 14 442 000 UZS " }],
         color: [{ name: "black" }, { name: "blue" }, { name: "#fffdd0" }],
         sixMonth: " 4 059 090 UZS         ",
         twelveMonth: " 2 335 588 UZS         "
