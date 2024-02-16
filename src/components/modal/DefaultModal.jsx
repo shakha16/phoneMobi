@@ -31,14 +31,14 @@ export default function DefaultModal({ item, setYes }) {
                         </div>
                     </div>
                     <h1 className="flex justify-center items-center gap-4 w-[510px]"><span className="text-[20px] bg-red-700 text-white rounded-md p-1">Цена:</span></h1>
-                    <div className="flex gap-10">
+                    <div className="w-[300px] flex items-center justify-between">
                         <h1>6-ой {item.sixMonth}</h1>
                         <h1>12-ой {item.twelveMonth}</h1>
                     </div>
                     <div className="w-[300px] flex flex-col gap-4">
                         {
                             item.memory.map(item => (
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between ">
                                     <h1>{item.name}</h1>
                                     <h1>{item.price}</h1>
                                 </div>

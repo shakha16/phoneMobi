@@ -14,8 +14,10 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 13",
         ves: "192 г.",
-        memory: [{ name: "4/128", price: "1 700 000 " }, { name: "6/128", price: "" }, { name: "8/256", price: "" }],
-        color: [{ name: "#9AFF8B" }, { name: "black" }, { name: "white" }]
+        memory: [{ name: "4/128", price: "1 840 000 " },{ name: "8/256", price: "1 975 000" }],
+        color: [{ name: "#9AFF8B" }, { name: "black" }],
+        sixMonth: "453 475",
+        twelveMonth: "289 900"
     },
     {
         id: 2,
