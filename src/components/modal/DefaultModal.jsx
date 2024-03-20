@@ -48,8 +48,8 @@ export default function DefaultModal({ item, setYes }) {
                                 {
                                     item.memory.map(item => (
                                         <div className="w-[481px] flex items-center justify-between gap-2 p-1">
-                                            <h1>{item.name}ㅤㅤㅤㅤㅤㅤㅤ 6-ой {Math.round((((item.price + (item.price / 100 * 35)) + ((item.price + (item.price / 100 * 35)) / 100 * 26)) * curs) / 6)} UZS</h1>
-                                            <h1>12-ой {Math.round((((item.price + (item.price / 100 * 35)) + ((item.price + (item.price / 100 * 35)) / 100 * 45)) * curs) / 12)} UZS</h1>
+                                            <h1>{item.name}ㅤㅤㅤㅤㅤㅤㅤ 6-ой {Math.round((((item.price + (item.price / 100 * 35)) + ((item.price + (item.price / 100 * 35)) / 100 * 22)) * curs) / 6)} UZS</h1>
+                                            <h1>12-ой {Math.round((((item.price + (item.price / 100 * 35)) + ((item.price + (item.price / 100 * 35)) / 100 * 44)) * curs) / 12)} UZS</h1>
                                         </div>
                                     ))
                                 }
