@@ -3,6 +3,8 @@ import './App.css'
 import Phone from "./Phone"
 import { useForm } from 'react-hook-form';
 
+
+
 let phones = [
     {
         id: 1,
@@ -14,10 +16,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 13",
         ves: "192 г.",
-        memory: [{ name: "4/128", price: "1 840 000 " },{ name: "8/256", price: "1 975 000" }],
+        memory: [{ name: "4/128", price: 117},{ name: "8/256", price: 137},{ name: "6/128", price: 127}],
         color: [{ name: "#9AFF8B" }, { name: "black" }],
-        sixMonth: "453 475",
-        twelveMonth: "289 900"
     },
     {
         id: 2,
@@ -29,10 +29,8 @@ let phones = [
         batery: "5100 мАч",
         os: "Android 13",
         ves: "187 г.",
-        memory: [{ name: "8/256", price: " 3 635 000 UZS         " }, { name: "12/512", price: " 4 233 000 UZS         " }],
-        color: [{ name: "black" }, { name: "#50C878" }, { name: "#8182B8" }],
-        sixMonth: " 1 136 520 UZS         ",
-        twelveMonth: " 653 950 UZS         "
+        memory: [{name: "8/128", price: 250},{ name: "8/256", price: 260 }, { name: "12/512", price: 305}],
+        color: [{ name: "black" }, { name: "#50C878" }, { name: "#8182B8" }]
     },
     {
         id: 3,
@@ -44,10 +42,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 14",   
         ves: " 202 г.",
-        memory: [{ name: "8/128", price: " 3 710 000 UZS         " }, { name: "8/256", price: " 4 146 000 UZS         " }],
-        color: [{ name: "black" }, { name: "green" }, { name: "violet" }],
-        sixMonth: " 1 111 740 UZS         ",
-        twelveMonth: " 639 692 UZS         "
+        memory: [{ name: "8/128", price: 285}],
+        color: [{ name: "black" }, { name: "green" }, { name: "violet" }]
     },
     {
         id: 4,
@@ -59,26 +55,24 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 14",
         ves: "232 г.",
-        memory: [{ name: "12/512gb", price: " 15 687 000 UZS" }, { name: "12/256", price: "18 488 000 UZS" }],
-        color: [{ name: "black" }, { name: "yellow" }, { name: "violoet" }],
-        sixMonth: " 4 341 330 UZS",
-        twelveMonth: " 2 497 988 UZS"
+        memory: [{ name: "12/512gb", price: 1160}, { name: "12/256", price: 1060}],
+        color: [{ name: "black" }, { name: "yellow" }, { name: "violoet" }]
     },
-    {
-        id: 5,
-        name: 'S24 Ultra',
-        img: 'https://media.currys.biz/i/currysprod/10259954_001?$l-large$&fmt=auto',
-        display: "6.8 AMOLED - 1440 x 3120",
-        chip: "Snapdragon 8 Gen 3 (for Galaxy)",
-        camera: "4 (200 MP + 50 MP + 10 MP + 12 MP)",
-        batery: "5000 мАч",
-        os: "Android 14",
-        ves: "232 г.",
-        memory: [{ name: "12/256gb", price: " 14 442 000 UZS" }],
-        color: [{ name: "black" }],
-        sixMonth: "  3 882 480 UZS",
-        twelveMonth: "  2 233 967 UZS"
-    },
+    // {
+    //     id: 5,
+    //     name: 'S24 Ultra',
+    //     img: 'https://media.currys.biz/i/currysprod/10259954_001?$l-large$&fmt=auto',
+    //     display: "6.8 AMOLED - 1440 x 3120",
+    //     chip: "Snapdragon 8 Gen 3 (for Galaxy)",
+    //     camera: "4 (200 MP + 50 MP + 10 MP + 12 MP)",
+    //     batery: "5000 мАч",
+    //     os: "Android 14",
+    //     ves: "232 г.",
+    //     memory: [{ name: "12/256gb", price: " 14 442 000 UZS" }],
+    //     color: [{ name: "black" }],
+    //     sixMonth: "  3 882 480 UZS",
+    //     twelveMonth: "  2 233 967 UZS"
+    // },
     {
         id: 6,
         name: 'S24 Ultra',
@@ -89,10 +83,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 14",
         ves: "232 г.",
-        memory: [{ name: "12/256gb", price: "  14 816 000 UZS"}],
-        color: [{ name: "gray" }],
-        sixMonth: " 3 988 320 UZS         ",
-        twelveMonth: "  2 294 867 UZS         "
+        memory: [{ name: "12/256gb", price: 1065}],
+        color: [{ name: "gray" },{name: "violet"}]
     },
     {
         id: 7,
@@ -104,10 +96,8 @@ let phones = [
         batery: "5000 mAh",
         os: "Android 14",
         ves: "195 г",
-        memory: [{ name: "12/256", price: " 10 894 000 UZS " }],
-        color: [{ name: "black"},{ name: "violet"},{ name: "yellow"},{ name: "gray"}],
-        sixMonth: " 2 947 140 UZS         ",
-        twelveMonth: " 1 695 775 UZS         "
+        memory: [{ name: "12/256", price: 840 }, {name: "12/512", price: 920}],
+        color: [{ name: "black"},{ name: "violet"},{ name: "yellow"},{ name: "gray"}]
     },
     {
         id: 8,
@@ -119,10 +109,8 @@ let phones = [
         batery: "4000 мАч",
         os: "Android 14",
         ves: "167 г.",
-        memory: [ { name: "8/256", price: " 10 334 000 UZS" }, { name: "8/128", price: " 9 524 000 UZS" }],
-        color: [{ name: "black" }, { name: "gray" }],
-        sixMonth: " 2 788 380 UZS         ",
-        twelveMonth: " 1 604 425 UZS         "
+        memory: [ { name: "8/256", price: 710}, { name: "8/128", price: 670 }],
+        color: [{ name: "black" }, { name: "gray" }]
     },
     {
         id: 9,
@@ -134,10 +122,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 14",
         ves: "233 г.",
-        memory: [{ name: "12/512", price: " 12 824 000 UZS" }, { name: "12/256", price: " 11 267 000 UZS         " }, { name: "8/256", price: " 10 583 000 UZS         " }],
-        color: [{ name: "black" }, { name: "green" }, { name: "#967bb6" }, { name: "#FFFDD0" }],
-        sixMonth: " 3 458 910 UZS",
-        twelveMonth: " 1 990 246 UZS"
+        memory: [{ name: "12/512", price: 940}, { name: "12/256", price: 820 }],
+        color: [{ name: "black" }, { name: "green" }, { name: "#967bb6" }, { name: "#FFFDD0" }]
     },
     {
         id: 10,
@@ -149,10 +135,8 @@ let phones = [
         batery: "3900 мАч",
         os: "Android 14",
         ves: "168 г.",
-        memory: [{ name: "8/128", price: " 7 906 000 UZS         " }, { name: "8/256", price: " 8 342 000 UZS         " }],
-        color: [{ name: "black" }, { name: "green" }, { name: "#FFFDD0" }],
-        sixMonth: " 2 258 970 UZS       ",
-        twelveMonth: " 1 299 804 UZS"
+        memory: [{ name: "8/128", price: 595}, { name: "8/256", price: 625}],
+        color: [{ name: "black" }, { name: "green" }, { name: "#FFFDD0" }]
     },
     {
         id: 11,
@@ -164,10 +148,8 @@ let phones = [
         batery: "4400 мАч",
         os: "Android 14",
         ves: "253 г.",
-        memory: [{ name: "12/512", price: "15 065 000 UZS  " }, { name: "12/256", price: " 14 442 000 UZS " }],
-        color: [{ name: "black" }, { name: "blue" }, { name: "#fffdd0" }],
-        sixMonth: " 4 059 090 UZS         ",
-        twelveMonth: " 2 335 588 UZS         "
+        memory: [{ name: "12/512", price: 1160 }, { name: "12/256", price: 1130 }],
+        color: [{ name: "black" }, { name: "blue" }, { name: "#fffdd0" }]
     },
     {
         id: 12,
@@ -180,9 +162,7 @@ let phones = [
         os: "Android 14",
         ves: "187 г.",
         memory: [{ name: "8/512", price: " 8 840 000 UZS         " }, { name: "8/256", price: " 8 466 000 UZS         " }],
-        color: [{ name: "black" }, { name: "#3BAF84" }],
-        sixMonth: " 2 400 090 UZS         ",
-        twelveMonth: " 1 381 004 UZS         "
+        color: [{ name: "black" }, { name: "#3BAF84" }]
     },
     {
         id: 13,
@@ -194,10 +174,8 @@ let phones = [
         batery: "4400 мАч",
         os: "Android 13",
         ves: "263 г.",
-        memory: [{ name: "12/256", price: " 12 948 000 UZS         " }],
-        color: [{ name: "black" }],
-        sixMonth: " 3 494 190 UZS         ",
-        twelveMonth: " 2 010 546 UZS         "
+        memory: [{ name: "12/256", price: 950}],
+        color: [{ name: "black" }]
     },
     {
         id: 14,
@@ -209,10 +187,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 14",
         ves: "228 г.",
-        memory: [{ name: "12/512", price: " 10 458 000 UZS         " }, { name: "12/256", price: " 9 836 000 UZS         " }],
-        color: [{ name: "black" }, { name: "red" }],
-        sixMonth: " 2 823 660 UZS         ",
-        twelveMonth: " 1 624 725 UZS         "
+        memory: [{ name: "12/512", price: 750 }, { name: "12/256", price: 720}],
+        color: [{ name: "black" }, { name: "red" }]
     },
     {
         id: 15,
@@ -224,10 +200,8 @@ let phones = [
         batery: "3700 мАч",
         os: "Android 14",
         ves: "167 г.",
-        memory: [{ name: "8/128", price: " 5 852 000 UZS         " }, { name: "8/256", price: " 6 723 000 UZS         " }],
-        color: [{ name: "black" }, { name: "green" }, { name: "white" }],
-        sixMonth: " 1 800 120 UZS         ",
-        twelveMonth: " 1 035 783 UZS         "
+        memory: [{ name: "8/128", price: 450}, { name: "8/256", price: 500}],
+        color: [{ name: "black" }, { name: "green" }, { name: "white" }]
     },
     {
         id: 16,
@@ -239,10 +213,8 @@ let phones = [
         batery: "4500 мАч",
         os: "Android 14",
         ves: "209 г.",
-        memory: [{ name: "8/128", price: " 6 412 000 UZS         " }, { name: "8/256", price: " 6 599 000 UZS         " }],
-        color: [{ name: "black" }, { name: "#3BAF84" }, { name: "purple" }, { name: "#fffdd0" }],
-        sixMonth: " 1 764 840 UZS         ",
-        twelveMonth: " 1 015 483 UZS         "
+        memory: [{ name: "8/128", price: 470 }, { name: "8/256", price: 480 }],
+        color: [{ name: "black" }, { name: "#3BAF84" }, { name: "purple" }, { name: "#fffdd0" }]
     },
     {
         id: 17,
@@ -254,10 +226,8 @@ let phones = [
         batery: "4500 мАч",
         os: "Android 14",
         ves: "177 г.",
-        memory: [{ name: "8/128", price: " 4 582 000 UZS         " }, { name: "8/256", price: " 5 080 000 UZS         " }],
-        color: [{ name: "black" }, { name: "#808000" }],
-        sixMonth: " 1 376 550 UZS         ",
-        twelveMonth: " 792 063 UZS         "
+        memory: [{ name: "8/128", price: 340}, { name: "8/256", price: 375}],
+        color: [{ name: "black" }, { name: "#808000" }]
     },
     {
         id: 18,
@@ -269,10 +239,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 14",
         ves: "199 г.",
-        memory: [{ name: "8/128", price: " 3 088 000 UZS         " }, { name: "8/256", price: " 3 548 000 UZS         " }],
-        color: [{ name: "black" }, { name: "violet" }, { name: "lime" }, { name: "silver" }],
-        sixMonth: " 942 480 UZS         ",
-        twelveMonth: " 542 300 UZS         "
+        memory: [{ name: "8/128", price: 225}, { name: "8/256", price: 263}],
+        color: [{ name: "black" }, { name: "violet" }, { name: "lime" }, { name: "silver" }]
     },
     {
         id: 19,
@@ -284,10 +252,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 14",
         ves: "195 г.",
-        memory: [{ name: "6/128", price: " 2 515 000 UZS         " }, { name: "8/128", price: " 2 776 000 UZS         " }, { name: "4/128", price: " 2 440 000 UZS         " }],
-        color: [{ name: "black" }, { name: "green" }, { name: "silver" }],
-        sixMonth: " 723 660 UZS         ",
-        twelveMonth: " 416 392 UZS         "
+        memory: [{ name: "6/128", price: 181 },{ name: "4/128", price: 175 }],
+        color: [{ name: "black" }, { name: "green" }, { name: "silver" }]
     },
     {
         id: 20,
@@ -299,10 +265,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 14",
         ves: "200 г.",
-        memory: [{ name: "6/128", price: " 2 154 000 UZS         " }, { name: "4/128", price: " 2 092 000 UZS         " }, { name: "8/256", price: " 2 876 000 UZS         " }],
-        color: [{ name: "black" }, { name: "yellow" }, { name: "blue" }],
-        sixMonth: " 751 800 UZS         ",
-        twelveMonth: " 432 583 UZS         "
+        memory: [{ name: "6/128", price: 152 }, { name: "8/256", price: 180 }],
+        color: [{ name: "black" }, { name: "yellow" }, { name: "blue" }]
     },
     {
         id: 21,
@@ -314,10 +278,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 13",
         ves: "201 г.",
-        memory: [{ name: "4/128", price: " 2 092 000 UZS         " }, { name: "4/64", price: " 1 905 000 UZS         " }],
-        color: [{ name: "black" }, { name: "black" }, { name: "silver" }],
-        sixMonth: " 529 410 UZS         ",
-        twelveMonth: " 304 621 UZS         "
+        memory: [{ name: "4/128", price: 145}, { name: "4/64", price: 130}],
+        color: [{ name: "black" }, { name: "black" }, { name: "silver" }]
     },
     {
         id: 22,
@@ -329,10 +291,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 13",
         ves: "194 г.",
-        memory: [{ name: "6/128", price: " 2 166 000 UZS         " }, { name: "4/128", price: " 1 868 000 UZS         " }],
-        color: [{ name: "black" }, { name: "green" }, { name: "silver" }],
-        sixMonth: " 550 620 UZS         ",
-        twelveMonth: " 316 825 UZS         "
+        memory: [{ name: "6/128", price: 155}],
+        color: [{ name: "black" }, { name: "green" }, { name: "silver" }]
     },
     {
         id: 23,
@@ -344,40 +304,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 13",
         ves: "195 г.",
-        memory: [{ name: "6/128", price: " 2 029 000 UZS         " }, { name: "4/128", price: " 1 693 000 UZS         " }],
-        color: [{ name: "black" }, { name: "green" }],
-        sixMonth: " 511 770 UZS         ",
-        twelveMonth: " 294 471 UZS         "
-    },
-    {
-        id: 24,
-        name: 'Samsung A04s',
-        img: 'https://olcha.uz/image/400x400/products/2022-10-26/samsung-galaxy-a04s-chernyy-160198-0.jpeg',
-        display: "6.5 PLS TFT - 720 x 1600",
-        chip: "Samsung Exynos 850",
-        camera: "3 (50 MP + 2 MP + 2 MP)",
-        batery: "5000 мАч",
-        os: "Android 13",
-        ves: "195 г.",
-        memory: [{ name: "4/64", price: " 1 768 000 UZS         " }],
-        color: [{ name: "black" }, { name: "#b87333" }],
-        sixMonth: " 437 640 UZS         ",
-        twelveMonth: " 251 817 UZS         "
-    },
-    {
-        id: 25,
-        name: 'Samsung A03',
-        img: 'https://olcha.uz/image/400x400/products/2022-04-02/samsung-galaxy-a03-chernyy-332-gb-44239-0.jpeg',
-        display: "6.5 PLS TFT - 720 x 1600",
-        chip: "Unisoc T606",
-        camera: "2 (48 MP + 2 MP)",
-        batery: "5000 мАч",
-        os: "Android 13",
-        ves: "196 г.",
-        memory: [{ name: "32gb", price: " 1 594 000 UZS         " }],
-        color: [{ name: "black" }],
-        sixMonth: " 388 290 UZS         ",
-        twelveMonth: " 223 421 UZS         "
+        memory: [{ name: "6/128", price: 138}],
+        color: [{ name: "black" }, { name: "green" }]
     },
     {
         id: 26,
@@ -389,10 +317,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 12",
         ves: "192 г.",
-        memory: [{ name: "6/128", price: " 1 818 000 UZS         " }, { name: "4/128", price: " 1 718 000 UZS         " }],
-        color: [{ name: "black" }, { name: "blue" }],
-        sixMonth: " 423 570 UZS         ",
-        twelveMonth: " 243 721 UZS         "
+        memory: [{ name: "6/128", price: 125}, { name: "4/128", price: 101}],
+        color: [{ name: "black" }, { name: "blue" }]
     },
     {
         id: 27,
@@ -404,10 +330,8 @@ let phones = [
         batery: "3 (50 MP + 8 MP + 2 MP)",
         os: "Android 14",
         ves: "198.5 г.",
-        memory: [{ name: "6/128", price: " 2 029 000 UZS         " }, { name: "4/128", price: " 1 967 000 UZS         " }],
-        color: [{ name: "black" }, { name: "blue" }, { name: "silver" }],
-        sixMonth: " 511 770 UZS         ",
-        twelveMonth: " 294 471 UZS         "
+        memory: [{ name: "8/256", price: 160}, { name: "4/128", price: 140}],
+        color: [{ name: "black" }, { name: "blue" }, { name: "silver" }]
     },
     {
         id: 28,
@@ -419,10 +343,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 13",
         ves: "173.5 г.",
-        memory: [{ name: "6/128", price: " 2 390 000 UZS         " }, { name: "8/128", price: " 2 527 000 UZS         " }, { name: "8/256", price: " 2 702 000 UZS         " }],
-        color: [{ name: "black" }, { name: "blue" }, { name: "green" }],
-        sixMonth: " 614 250 UZS         ",
-        twelveMonth: " 353 438 UZS         "
+        memory: [{ name: "6/128", price: 175}, { name: "8/128", price: 185}, { name: "8/256", price: 195 }],
+        color: [{ name: "black" }, { name: "blue" }, { name: "green" }]
     },
     {
         id: 29,
@@ -434,10 +356,8 @@ let phones = [
         batery: " 5020 мАч",
         os: "Android 13",
         ves: "193 г.",
-        memory: [{ name: "8/256", price: " 3 461 000 UZS         " }],
-        color: [{ name: "black" }, { name: "blue" }],
-        sixMonth: " 917 700 UZS         ",
-        twelveMonth: " 528 042 UZS         "
+        memory: [{ name: "8/256", price: 260}],
+        color: [{ name: "black" }, { name: "blue" }]
     },
     {
         id: 30,
@@ -449,10 +369,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 13",
         ves: "187 г.",
-        memory: [{ name: "8/256", price: " 3 274 000 UZS         " }],
-        color: [{ name: "black" }, { name: "blue" }],
-        sixMonth: " 864 780 UZS         ",
-        twelveMonth: " 497 592 UZS         "
+        memory: [{ name: "8/256", price: 235}],
+        color: [{ name: "black" }, { name: "blue" }]
     },
     {
         id: 31,
@@ -464,10 +382,8 @@ let phones = [
         batery: "5100 мАч",
         os: "Android 13",
         ves: "187 г.",
-        memory: [{ name: "8/512", price: " 5 603 000 UZS         " }, { name: "8/256", price: " 4 943 000 UZS         " }],
+        memory: [{ name: "12/512", price: 425 }, { name: "8/256", price: 375 }],
         color: [{ name: "black" }, { name: "purple" }, { name: "white" }],
-        sixMonth: " 1 524 810 UZS         ",
-        twelveMonth: " 877 371 UZS         "
     },
     {
         id: 32,
@@ -479,10 +395,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 13",
         ves: "199 г.",
-        memory: [{ name: "6/128", price: " 2 017 000 UZS         " }],
-        color: [{ name: "black" }],
-        sixMonth: " 508 200 UZS         ",
-        twelveMonth: " 292 417 UZS         "
+        memory: [{ name: "6/128", price: 138},{ name: "4/128", price: 132}],
+        color: [{ name: "black" }]
     },
     {
         id: 33,
@@ -494,10 +408,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 13",
         ves: "199 г.",
-        memory: [{ name: "12/256", price: " 2 776 000 UZS         " }],
-        color: [{ name: "black" }, { name: "blue" }],
-        sixMonth: " 723 660 UZS         ",
-        twelveMonth: " 416 392 UZS         "
+        memory: [{ name: "12/256", price: 195}],
+        color: [{ name: "black" }, { name: "blue" }]
     },
     {
         id: 34,
@@ -509,10 +421,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 11",
         ves: "202 г.",
-        memory: [{ name: "8/128", price: " 2 839 000 UZS         " }, { name: "8/256", price: " 3 212 000 UZS         " }],
-        color: [{ name: "black" }, { name: "blue" }, { name: "white" }],
-        sixMonth: " 847 140 UZS         ",
-        twelveMonth: " 487 442 UZS         "
+        memory: [{ name: "8/128", price: 200}, { name: "8/256", price: 230}],
+        color: [{ name: "black" }, { name: "blue" }, { name: "white" }]
     },
     {
         id: 35,
@@ -524,10 +434,8 @@ let phones = [
         batery: "4500 мАч",
         os: "Android 13",
         ves: "180 г.",
-        memory: [{ name: "12/256", price: " 6 599 000 UZS         " }],
-        color: [{ name: "blue" }],
-        sixMonth: " 1 764 840 UZS         ",
-        twelveMonth: " 1 015 483 UZS         "
+        memory: [{ name: "12/256", price: 610}],
+        color: [{ name: "blue" }]
     },
     {
         id: 36,
@@ -539,10 +447,8 @@ let phones = [
         batery: "4600 мАч",
         os: "Android 14",
         ves: "204 г.",
-        memory: [{ name: "8/256", price: " 8 466 000 UZS         " }],
-        color: [{ name: "blue" }],
-        sixMonth: " 2 294 250 UZS         ",
-        twelveMonth: " 1 320 104 UZS         "
+        memory: [{ name: "12/256", price: 610}],
+        color: [{ name: "blue" }]
     },
     {
         id: 37,
@@ -554,10 +460,8 @@ let phones = [
         batery: "4500 мАч",
         os: "Android 12",
         ves: "262 г.",
-        memory: [{ name: "12/256", price: " 16 559 000 UZS         " }],
-        color: [{ name: "black" }],
-        sixMonth: " 4 482 660 UZS         ",
-        twelveMonth: " 2 579 308 UZS         "
+        memory: [{ name: "12/256", price: 1270}],
+        color: [{ name: "black" }]
     },
     {
         id: 38,
@@ -569,10 +473,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 14",
         ves: "181 г.",
-        memory: [{ name: "12/256", price: " 4 831 000 UZS         " }],
-        color: [{ name: "black" }, { name: "blue" }],
-        sixMonth: " 1 305 990 UZS         ",
-        twelveMonth: " 751 463 UZS         "
+        memory: [{ name: "12/256", price: 370}],
+        color: [{ name: "black" }, { name: "blue" }]
     },
     {
         id: 39,
@@ -584,10 +486,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 14",
         ves: "186 г.",
-        memory: [{ name: "12/256", price: " 4 831 000 UZS         " }],
-        color: [{ name: "black" }],
-        sixMonth: " 1 305 990 UZS         ",
-        twelveMonth: " 751 463 UZS         "
+        memory: [{ name: "12/256", price: 355}, { name: "8/256", price: 350}],
+        color: [{ name: "black" }]
     },
     {
         id: 40,
@@ -599,10 +499,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 14",
         ves: "189 г.",
-        memory: [{ name: "6/128", price: " 3 088 000 UZS         " }, { name: "8/256", price: " 3 025 000 UZS         " }],
-        color: [{ name: "black" }, { name: "blue" }],
-        sixMonth: " 811 860 UZS         ",
-        twelveMonth: " 467 142 UZS         "
+        memory: [{ name: "6/128", price: 225}, { name: "8/256", price: 230}],
+        color: [{ name: "black" }, { name: "blue" }, {name: "green"}]
     },
     {
         id: 41,
@@ -614,10 +512,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 13",
         ves: "199 г.",
-        memory: [{ name: "8/256", price: " 3 025 000 UZS         " }, { name: "12/512", price: " 3 461 000 UZS         " }],
-        color: [{ name: "black" }, { name: "blue" }],
-        sixMonth: " 917 700 UZS         ",
-        twelveMonth: " 528 042 UZS         "
+        memory: [{ name: "8/256", price: 210}, { name: "12/512", price: 245}],
+        color: [{ name: "black" }, { name: "blue" }]
     },
     {
         id: 42,
@@ -629,10 +525,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 13",
         ves: "120 г.",
-        memory: [{ name: "8/256", price: " 2 166 000 UZS         " }],
-        color: [{ name: "black" }],
-        sixMonth: " 550 620 UZS         ",
-        twelveMonth: " 316 825 UZS         "
+        memory: [{ name: "8/256", price: 155}],
+        color: [{ name: "black" }]
     },
     {
         id: 42.1,
@@ -644,10 +538,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 13",
         ves: "208 г.",
-        memory: [{ name: "8/256", price: " 1 743 000 UZS         " }],
-        color: [{ name: "black" }],
-        sixMonth: " 430 710 UZS         ",
-        twelveMonth: " 247 829 UZS         "
+        memory: [{ name: "8/256", price: 121}],
+        color: [{ name: "black" }]
     },
     {
         id: 43,
@@ -659,10 +551,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 13",
         ves: "202 г.",
-        memory: [{ name: "4/128", price: " 1 394 000 UZS         " }, { name: "8/128", price: " 1 494 000 UZS         " }],
-        color: [{ name: "black" }],
-        sixMonth: " 359 940 UZS         ",
-        twelveMonth: " 207 108 UZS         "
+        memory: [{ name: "4/128", price: 115 }, { name: "8/128", price: 120 }],
+        color: [{ name: "black" }, {name: "blue"}, {name: "white"}]
     },
     {
         id: 44,
@@ -674,10 +564,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 13",
         ves: "185 г.",
-        memory: [{ name: "4/128", price: " 1 332 000 UZS         " }, { name: "8/128", price: " 1 457 000 UZS         " }],
-        color: [{ name: "black" }],
-        sixMonth: " 349 440 UZS         ",
-        twelveMonth: " 201 067 UZS         "
+        memory: [{ name: "4/128", price: 105 }, { name: "8/128", price: 120 }],
+        color: [{ name: "black" }]
     },
     {
         id: 45,
@@ -689,10 +577,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 12",
         ves: "199 г.",
-        memory: [{ name: "4/128", price: " 1 251 000 UZS         " }, { name: "64gb", price: " 1 208 000 UZS         " }],
-        color: [{ name: "black" }],
-        sixMonth: " 291 270 UZS         ",
-        twelveMonth: " 167 596 UZS         "
+        memory: [{ name: "4/128", price: 98 }, { name: "64gb", price: 90 }],
+        color: [{ name: "black" }]
     },
     {
         id: 46,
@@ -704,10 +590,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 12",
         ves: "182",
-        memory: [{ name: "64gb", price: " 1 058 000 UZS         " }],
-        color: [{ name: "black" }],
-        sixMonth: " 236 460 UZS         ",
-        twelveMonth: " 136 058 UZS         "
+        memory: [{ name: "64gb", price: 67}],
+        color: [{ name: "black" }]
     },
     {
         id: 47,
@@ -719,10 +603,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 12",
         ves: "175",
-        memory: [{ name: "4/128", price: " 1 282 000 UZS" },{ name: "4/64", price: " 1 158 000 UZS         " }],
-        color: [{ name: "black" }],
-        sixMonth: " 300 090 UZS         ",
-        twelveMonth: " 172 671 UZS         "
+        memory: [{ name: "4/128", price: 90},{ name: "4/64", price: 78}],
+        color: [{ name: "black" }]
     },
     {
         id: 48,
@@ -734,10 +616,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 12",
         ves: "191 г.",
-        memory: [{ name: "8/128", price: " 1 407 000 UZS         " }],
-        color: [{ name: "black" }], 
-        sixMonth: " 335 370 UZS ",
-        twelveMonth: " 192 971 UZS"
+        memory: [{ name: "8/128", price: 93}],
+        color: [{ name: "black" }]
     },
     {
         id: 49,
@@ -749,10 +629,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 13",
         ves: "190 г.",
-        memory: [{ name: "4/128", price: " 1 444 000 UZS         " }, { name: "8/128", price: " 1 631 000 UZS         " }],
-        color: [{ name: "black" }],
-        sixMonth: " 398 790 UZS         ",
-        twelveMonth: " 229 463 UZS         "
+        memory: [{ name: "8/128", price: 108}, { name: "8/256", price: 121}],
+        color: [{ name: "black" }]
     },
     {
         id: 50,
@@ -764,25 +642,8 @@ let phones = [
         batery: "3274 мАч",
         os: "iOS 17.3",
         ves: "187 г.",
-        memory: [{ name: "128gb", price: " 13 060 000 UZS         " }, { name: "256gb", price: " 14 554 000 UZS         " }],
-        color: [{ name: "black" }, { name: "blue" }],
-        sixMonth: " 3 914 400 UZS         ",
-        twelveMonth: " 2 252 333 UZS         "
-    },
-    {
-        id: 51,
-        name: 'iPhone 15 Pro eSim',
-        img: 'https://www.creditasia.uz/upload/iblock/a77/9j109u0a7iq6ribnk9bll98gnxdc7om4/smartfon-apple-iphone-15-pro-128gb-natural-titanium.jpg',
-        display: "6.1 OLED - 1179 x 2556",
-        chip: "Apple A17 Pro",
-        camera: "4 (48 MP + 12 MP + 12 MP)",
-        batery: "3274 мАч",
-        os: "iOS 17.3",
-        ves: "187 г.",
-        memory: [{ name: "128gb", price: " 13 309 000 UZS" }, { name: "256gb", price: "  14 928 000 UZS         " }],
-        color: [{ name: "#B7A28B" }, { name: "white" }],
-        sixMonth: " 4 020 240 UZS",
-        twelveMonth: " 2 313 233 UZS"
+        memory: [{ name: "128gb", price: 949}, { name: "256gb", price: 1079}],
+        color: [{ name: "black" }, { name: "blue" }]
     },
     {
         id: 52,
@@ -794,40 +655,8 @@ let phones = [
         batery: "4441 мАч",
         os: "iOS 17.3",
         ves: "221 г.",
-        memory: [{ name: "256gb", price: " 15 301 000 UZS" }, { name: "512gb", price: " 17 542 000 UZS         " }, { name: "1tb", price: " 20 045 000 UZS         " }],
-        color: [{ name: "black" }, { name: "blue" }],
-        sixMonth: " 5 470 920 UZS         ",
-        twelveMonth: " 3 147 950 UZS         "
-    },
-    {
-        id: 53,
-        name: 'iPhone 15 Pro Max eSim',
-        img: 'https://assets.asaxiy.uz/product/items/desktop/d4c2e4a3297fe25a71d030b67eb83bfc2023092315141223825BJDBz9NaNi.png.webp',
-        display: "6.7 OLED - 1290 x 2796",
-        chip: "Apple A17 Pro",
-        camera: "4 (48 MP + 12 MP + 12 MP)",
-        batery: "4441 мАч",
-        os: "iOS 17.3",
-        ves: "221 г.",
-        memory: [{ name: "256gb", price: " 15 924 000 UZS" }, { name: "512gb", price: " 18 538 000 UZS         " }, { name: "1tb", price: " 21 277 000 UZS         " }],
-        color: [{ name: "#B7A28B" }],
-        sixMonth: " 5 820 360 UZS         ",
-        twelveMonth: " 3 349 017 UZS         "
-    },
-    {
-        id: 54,
-        name: 'iPhone 15 Pro Max eSim',
-        img: 'https://assets.asaxiy.uz/product/items/desktop/e7f8a7fb0b77bcb3b283af5be021448f2023092315084722336mklZPe64CT.png.webp',
-        display: "6.7 OLED - 1290 x 2796",
-        chip: "Apple A17 Pro",
-        camera: "4 (48 MP + 12 MP + 12 MP)",
-        batery: "4441 мАч",
-        os: "iOS 17.3",
-        ves: "221 г.",
-        memory: [{ name: "256gb", price: " 15 675 000 UZS         " }, { name: "512gb", price: " 18 165 000 UZS         " }, { name: "1tb", price: " 20 045 000 UZS         " }],
-        color: [{ name: "white" }],
-        sixMonth: " 5 470 920 UZS",
-        twelveMonth: " 3 147 950 UZS"
+        memory: [{ name: "256gb", price: 1119}, { name: "512gb", price: 1299}, { name: "1tb", price: 1399}],
+        color: [{ name: "black" }, { name: "blue" }]
     },
     {
         id: 55,
@@ -839,10 +668,8 @@ let phones = [
         batery: "3349 мАч",
         os: "iOS 17.3",
         ves: "171 г.",
-        memory: [{ name: "128gb", price: " 10 072 000 UZS         " }, { name: "256gb", price: "  12 077 000 UZS         " }],
-        color: [{ name: "white" }],
-        sixMonth: " 3 247 230 UZS         ",
-        twelveMonth:  "1 868 446 UZS  "
+        memory: [{ name: "128gb", price: 749}, { name: "256gb", price: 920}],
+        color: [{ name: "white" }]
     },
     {
         id: 56,
@@ -854,10 +681,8 @@ let phones = [
         batery: "4383 мАч",
         os: "iOS 17.3",
         ves: "201 г.",
-        memory: [{ name: "128gb", price: " 12 450 000 UZS         " }, { name: "256gb", price: " 13 322 000 UZS         " }],
-        color: [{ name: "white" }],
-        sixMonth: " 3 600 240 UZS         ",
-        twelveMonth: " 2 071 567 UZS         "
+        memory: [{ name: "128gb", price: 850}, { name: "256gb", price: 1020}],
+        color: [{ name: "white" }]
     },
     {
         id: 57,
@@ -869,10 +694,8 @@ let phones = [
         batery: "3274 мАч",
         os: "iOS 17.3",
         ves: "187 г.",
-        memory: [{ name: "128gb", price: " 13 683 000 UZS         " }, { name: "256gb", price: " 15 052 000 UZS         " }],
-        color: [{ name: "black" }, { name: "blue" }, { name: "white" }, { name: "#B7A28B" }],
-        sixMonth: " 4 055 520 UZS         ",
-        twelveMonth: " 2 333 533 UZS         "
+        memory: [{ name: "128gb", price: 1029}, { name: "256gb", price: 1139}],
+        color: [{ name: "black" }, { name: "blue" }, { name: "white" }, { name: "#B7A28B" }]
     },
     {
         id: 58,
@@ -884,10 +707,8 @@ let phones = [
         batery: "4441 мАч",
         os: "iOS 17.3",
         ves: "221 г.",
-        memory: [{ name: "256gb", price: " 16 297 000 UZS         " }, { name: "512gb", price: " 19 298 000 UZS         " }, { name: "1tb", price: " 22 161 000 UZS         " }],
-        color: [{ name: "black" }, { name: "blue" }, { name: "white" }, { name: "#B7A28B" }],
-        sixMonth: " 6 070 890 UZS         ",
-        twelveMonth: " 3 493 171 UZS         "
+        memory: [{ name: "256gb", price: 1239}, { name: "512gb", price: 1460}, { name: "1tb", price: 1800}],
+        color: [{ name: "black" }, { name: "blue" }, { name: "white" }, { name: "#B7A28B" }]
     },
     {
         id: 59,
@@ -899,10 +720,8 @@ let phones = [
         batery: "3349 мАч",
         os: "iOS 17.3",
         ves: "171 г.",
-        memory: [{ name: "128gb", price: " 10 197 000 UZS         " }, { name: "256gb", price: " 13 060 000 UZS         " }],
-        color: [{ name: "white" }],
-        sixMonth: " 3 526 110 UZS",
-        twelveMonth: " 2 028 913 UZS"
+        memory: [{ name: "128gb", price: 759}, { name: "256gb", price: 930}],
+        color: [{ name: "white" }]
     },
     {
         id: 60,
@@ -914,10 +733,8 @@ let phones = [
         batery: "4383 мАч",
         os: "iOS 17.3",
         ves: "201 г.",
-        memory: [{ name: "128gb", price: " 12 450 000 UZS         " }, { name: "256gb", price: " 15 065 000 UZS         " }],
-        color: [{ name: "black" }],
-        sixMonth: " 4 059 090 UZS         ",
-        twelveMonth: " 2 335 588 UZS         "
+        memory: [{ name: "128gb", price: 930}, { name: "256gb", price: 1150}],
+        color: [{ name: "black" }]
     },
     {
         id: 61,
@@ -929,10 +746,8 @@ let phones = [
         batery: "3279 мАч",
         os: "iOS 17.3",
         ves: "172 г.",
-        memory: [{ name: "128gb", price: " 9 213 000 UZS         " }],
-        color: [{ name: "black" }, { name: "purple" }, { name: "blue" }],
-        sixMonth: " 2 470 650 UZS         ",
-        twelveMonth: " 1 421 604 UZS         "
+        memory: [{ name: "128gb", price: 690}],
+        color: [{ name: "black" }, { name: "purple" }, { name: "blue" }]
     },
     {
         id: 62,
@@ -944,10 +759,8 @@ let phones = [
         batery: "3227 мАч",
         os: " iOS 17.3",
         ves: "174 г.",
-        memory: [{ name: "128gb", price: " 8 217 000 UZS          " }],
-        color: [{ name: "black" }, { name: "pink" }, { name: "green" }, { name: "blue" }],
-        sixMonth: " 2 223 690 UZS         ",
-        twelveMonth: " 1 279 504 UZS  "
+        memory: [{ name: "128gb", price: 610}],
+        color: [{ name: "black" }, { name: "pink" }, { name: "green" }, { name: "blue" }]
     },
     {
         id: 63,
@@ -959,10 +772,8 @@ let phones = [
         batery: "3110 мАч",
         os: "iOS 17.3",
         ves: "194 г.",
-        memory: [{ name: "128gb", price: " 6 910 000 UZS         " }, { name: "64gb", price: " 6 163 000 UZS         " }],
-        color: [{ name: "black" },{ name: "white" }],
-        sixMonth: " 1 853 040 UZS        ",
-        twelveMonth: " 1 066 233 UZS         "
+        memory: [{ name: "128gb", price: 520}, { name: "64gb", price: 460}],
+        color: [{ name: "black" },{ name: "white" }]
     },
     {
         id: 64,
@@ -974,10 +785,8 @@ let phones = [
         batery: "5200 мАч",
         os: "Android 12",
         ves: "188 г.",
-        memory: [{ name: "4/64", price: " 1 619 000 UZS         " }],
-        color: [{ name: "black" }, { name: "white" }],
-        sixMonth: " 395 220 UZS         ",
-        twelveMonth: " 227 408 UZS         "
+        memory: [{ name: "4/64", price: 112}],
+        color: [{ name: "black" }, { name: "white" }]
     },
     {
         id: 65,
@@ -989,10 +798,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 12",
         ves: "194 г.",
-        memory: [{ name: "6/128", price: " 1 905 000 UZS         " }, { name: "4/128", price: " 1 843 000 UZS         " }, { name: "4/64", price: " 1 967 000 UZS         " }],
-        color: [{ name: "black" }, { name: "white" }],
-        sixMonth: " 494 130 UZS         ",
-        twelveMonth: " 284 321 UZS         "
+        memory: [{ name: "6/128", price: 135}, { name: "4/128", price: 130 }],
+        color: [{ name: "black" }, { name: "white" }]
     },
     {
         id: 66,
@@ -1004,10 +811,8 @@ let phones = [
         batery: "6000 мАч",
         os: "Android 12",
         ves: "196 г.",
-        memory: [{ name: "6/128", price: " 2 465 000 UZS         " }],
-        color: [{ name: "white" }],
-        sixMonth: " 635 250 UZS         ",
-        twelveMonth: " 365 521 UZS         "
+        memory: [{ name: "6/128", price: 180}],
+        color: [{ name: "black" },{ name: "blue" },{ name: "silver" }]
     },
     {
         id: 67,
@@ -1019,10 +824,8 @@ let phones = [
         batery: "6000 мАч",
         os: "Android 13",
         ves: "199 г.",
-        memory: [{ name: "8/128", price: " 2 341 000 UZS         " }],
-        color: [{ name: "white" }],
-        sixMonth: " 599 970 UZS         ",
-        twelveMonth: " 345 221 UZS         "
+        memory: [{ name: "8/128", price: 170}],
+        color: [{ name: "white" }]
     },
     {
         id: 68,
@@ -1034,10 +837,8 @@ let phones = [
         batery: "4500 мАч",
         os: "Android 13",
         ves: "166 г.",
-        memory: [{ name: "8/128", price: " 2 901 000 UZS         " }, { name: "8/256", price: " 3 088 000 UZS         " }],
-        color: [{ name: "white" },{ name: "green" }],
-        sixMonth: " 811 860 UZS         ",
-        twelveMonth: " 467 142 UZS         "
+        memory: [{ name: "8/128", price: 215}, { name: "8/256", price: 230 }],
+        color: [{ name: "white" },{ name: "green" }]
     },
     {
         id: 69,
@@ -1049,26 +850,24 @@ let phones = [
         batery: "4500 мАч",
         os: "Android 12",
         ves: "179 г.",
-        memory: [{ name: "6/128", price: " 2 652 000 UZS         " }],
-        color: [{ name: "white" }],
-        sixMonth: " 688 170 UZS         ",
-        twelveMonth: " 395 971 UZS         "
+        memory: [{ name: "6/128", price: 195 }],
+        color: [{ name: "white" }]
     },
-    {
-        id: 70,
-        name: 'Honor X9A',
-        img: 'https://www.creditasia.uz/upload/iblock/1d5/50rdkyl1ew1ee4qsd2who5f18aopbbh1/smartfon-honor-x9a-5g-6gb-128gb-polnochnyy-chernyy.webp',
-        display: "6.67 AMOLED - 1080 x 2400",
-        chip: "Snapdragon 695",
-        camera: "3 (64 MP + 5 MP + 2 MP)",
-        batery: "5100 мАч",
-        os: "Android 13",
-        ves: "175 г.",
-        memory: [{ name: "6/128", price: " 4 258 000 UZS         " }, { name: "8/256", price: " 4 507 000 UZS         " }],
-        color: [{ name: "green" }, { name: "white" }],
-        sixMonth: " 1 214 220 UZS         ",
-        twelveMonth: " 698 658 UZS         "
-    },
+    // {
+    //     id: 70,
+    //     name: 'Honor X9A',
+    //     img: 'https://www.creditasia.uz/upload/iblock/1d5/50rdkyl1ew1ee4qsd2who5f18aopbbh1/smartfon-honor-x9a-5g-6gb-128gb-polnochnyy-chernyy.webp',
+    //     display: "6.67 AMOLED - 1080 x 2400",
+    //     chip: "Snapdragon 695",
+    //     camera: "3 (64 MP + 5 MP + 2 MP)",
+    //     batery: "5100 мАч",
+    //     os: "Android 13",
+    //     ves: "175 г.",
+    //     memory: [{ name: "6/128", price: " 4 258 000 UZS         " }, { name: "8/256", price: " 4 507 000 UZS         " }],
+    //     color: [{ name: "green" }, { name: "white" }],
+    //     sixMonth: " 1 214 220 UZS         ",
+    //     twelveMonth: " 698 658 UZS         "
+    // },
     {
         id: 71,
         name: 'Honor X9B',
@@ -1079,10 +878,8 @@ let phones = [
         batery: "5800 мАч",
         os: "Android 13",
         ves: "185 г.",
-        memory: [{ name: "12/256", price: " 4 258 000 UZS         " }, { name: "8/256", price: " 3 835 000 UZS         " }],
-        color: [{ name: "black" }],
-        sixMonth: " 1 143 660 UZS         ",
-        twelveMonth: " 658 058 UZS         "
+        memory: [{ name: "12/256", price: 320}, { name: "8/256", price: 290 }],
+        color: [{ name: "black" }]
     },
     {
         id: 72,
@@ -1094,10 +891,8 @@ let phones = [
         batery: "4500 мАч",
         os: "Android 13",
         ves: "179 г.",
-        memory: [{ name: "8/256", price: " 3 150 000 UZS         " }],
-        color: [{ name: "black" },{ name: "white" }],
-        sixMonth: " 829 500 UZS         ",
-        twelveMonth: " 477 292 UZS         "
+        memory: [{ name: "8/256", price: 235}],
+        color: [{ name: "black" },{ name: "white" }]
     },
     {
         id: 73,
@@ -1109,10 +904,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 13",
         ves: "183 г.",
-        memory: [{ name: "8/256", price: " 5 951 000 UZS         " },{name: "12/512", price: " 6 474 000 UZS         "}],
+        memory: [{ name: "8/256", price: 460 },{name: "12/512", price: 490}],
         color: [{ name: "black" }, { name: "white" }],
-        sixMonth: " 1 729 560 UZS         ",
-        twelveMonth: " 995 183 UZS         "
     },
     {
         id: 74,
@@ -1124,13 +917,50 @@ let phones = [
         batery: "4800 мАч",
         os: "Android 13",
         ves: "178 г.",
-        memory: [{ name: "8/128", price: " 5 578 000 UZS         " }],
-        color: [{ name: "black" },{ name: "white" }],
-        sixMonth: " 1 517 670 UZS         ",
-        twelveMonth: " 873 263 UZS         "
+        memory: [{ name: "8/128", price: 430}],
+        color: [{ name: "black" },{ name: "white" }]
+    },
+    {
+        id: 75,
+        name: 'SAMSUNG A55',
+        img: 'https://allgood.uz/storage/products/January2024/zQiaeLoWsfclDE6EhD7a.webp',
+        display: "6.6 Super AMOLED - 1080 x 2340",
+        chip: "Exynos 1480",
+        camera: "3 (50 MP + 12 MP + 5 MP)",
+        batery: "5000 мАч",
+        os: "Android 14",
+        ves: "213 г.",
+        memory: [{ name: "8/128", price: 355 }, { name: "8/256", price: 385 }],
+        color: [{ name: "black" }, { name: "blue" }, { name: "white" }]
+    },
+    {
+        id: 76,
+        name: 'SAMSUNG A35',
+        img: 'https://www.ixbt.com/img/n1/news/2023/10/3/Samsung-Galaxy-A35-5K1_large.png',
+        display: "6.6 Super AMOLED - 1080 x 2340",
+        chip: "Exynos 1380",
+        camera: "3 (50 MP + 8 MP + 5 MP)",
+        batery: "5000 мАч",
+        os: "Android 14",
+        ves: "209 г.",
+        memory: [{ name: "8/128", price: 310}, { name: "8/256", price: 335 }],
+        color: [{ name: "black" }, { name: "blue" }, { name: "white" }]
+    },
+    {
+        id: 77,
+        name: 'SAMSUNG A25',
+        img: 'https://www.creditasia.uz/upload/iblock/dc9/9q7gjik12ft5m8so6izykfonikfh8lyd/smartfon-samsung-galaxy-a25-5g-sm-a256e-ds-128gb-black.webp',
+        display: "6.5 Super AMOLED",
+        chip: "Exynos 1280",
+        camera: "3 (50 MP + 8 MP + 2 MP)",
+        batery: "5000 мАч",
+        os: "Android 14",
+        ves: "197 г.",
+        memory: [{ name: "6/128", price: 227 }, { name: "8/256", price: 250 }],
+        color: [{ name: "black" }, { name: "blue" }, { name: "white" }]
     },
     // {
-    //     id: 73,
+    //     id: 78,
     //     name: '',
     //     img: '',
     //     display: "",
@@ -1140,10 +970,8 @@ let phones = [
     //     os: "",
     //     ves: "",
     //     memory: [{ name: "6/128", price: "" }, { name: "8/128", price: "" }, { name: "8/256", price: "" }],
-    //     color: [{ name: "black" }, { name: "" }, { name: "white" }],
-    //     sixMonth: "",
-    //     twelveMonth: ""
-    // }
+    //     color: [{ name: "black" }, { name: "" }, { name: "white" }]
+    // },
 ]
 
 
