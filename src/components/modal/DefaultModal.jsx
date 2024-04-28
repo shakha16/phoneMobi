@@ -2,10 +2,17 @@ import React, { useState } from "react";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 
 export default function DefaultModal({ item, setYes }) {
-    const [curs, setCurs] = useState(12650)    
+    const [curs, setCurs] = useState(12750)
+    // function nalPrice() {
+    //     return ((item.price >= 1100 ? item.price + 60 : item.price >= 900 ? item.price + 50 : item.price >= 700 ? item.price + 40 : item.price >= 500 ? item.price + 30 : item.price + 18) * curs).toLocaleString()
+    // }
+    // item.memory.map(item => (
+    //     const nalPrice = ((item.price >= 1100 ? item.price + 60 : item.price >= 900 ? item.price + 50 : item.price >= 700 ? item.price + 40 : item.price >= 500 ? item.price + 30 : item.price + 18) * curs).toLocaleString()
+    // ))
+    // console.log(nalPrice);
     return (
         <div key={item.id} className="absolute bg-white top-[50%] left-[50%] w-[1000px] h-[700px] overflow-hidden rounded-2xl flex items-center" style={{ transform: "translate(-50%, -50%" }}>
-            <div className="w-[90%] h-[90%] flex justify-center gap-8 items-start">
+            <div className="w-[76%] h-[90%] flex justify-center gap-8 items-start">
                 <div className="photo w-[30%] h-[95%]">
                     <img src={item.img} className="w-full h-full object-cover" alt="" />
                 </div>
@@ -33,23 +40,38 @@ export default function DefaultModal({ item, setYes }) {
                     </div>
                     <h1 className="flex justify-center items-center gap-4 w-[510px]"><span className="text-[20px] bg-red-700 text-white rounded-md p-1">Цена:</span></h1>
                     <div className="">
-                        <div className="w-[481px] flex flex-wrap gap-4 justify-between pb-6">
+                        <div className="w-[600px] flex flex-wrap gap-4 justify-between pb-6">
                             {
                                 item.memory.map(item => (
                                     <div className="flex items-center justify-between w-[35%]">
-                                        <h1 className="font-bold">{item.name}</h1>
-                                        <h1 className="font-bold">{((item.price >= 1100 ? item.price + 60 : item.price >= 900 ? item.price + 50 : item.price >= 700 ? item.price + 40 : item.price >= 500 ? item.price + 30 : item.price + 18) * curs).toLocaleString()} UZS</h1>
+                                        <h1 className="font-bold bg-green-700 rounded p-1 text-white">{item.name}</h1>
+                                        <h1 className="font-bold bg-green-700 rounded p-1 text-white flex">{((item.price >= 1100 ? item.price + 60 : item.price >= 900 ? item.price + 50 : item.price >=  700 ? item.price + 40 : item.price >= 500 ? item.price + 30 : item.price + 19) * curs).toLocaleString() + "UZS"}</h1>
                                     </div>
                                 ))
                             }
                         </div>
-                        <div className="flex flex-col gap-2">
+                        <div className="flex flex-col gap-2 lll">
+                            <div className="bg-yellow-400 p-1 text-white rounded-md">
+                                {
+                                    item.memory.map(item => (
+                                        <>
+                                            <h1 className="font-bold">Предоплата: {(((item.price >= 1100 ? item.price + 60 : item.price >= 900 ? item.price + 50 : item.price >= 700 ? item.price + 40 : item.price >= 500 ? item.price + 30 : item.price + 19) * curs) / 100 * 20).toLocaleString() + "UZS"}</h1>
+                                            <div className="flex items-center justify-between gap-2 p-1 font-bold">
+                                                {item.name}
+                                                <h1 className="font-bold flex flex-col items-center">3-ой {Math.round((((item.price >= 1100 ? item.price + 60 : item.price >= 900 ? item.price + 50 : item.price >=  700 ? item.price + 40 : item.price >= 500 ? item.price + 30 : item.price + 19) * curs) - (((item.price >= 1100 ? item.price + 60 : item.price >= 900 ? item.price + 50 : item.price >=  700 ? item.price + 40 : item.price >= 500 ? item.price + 30 : item.price + 19) * curs) / 100 * 20) + (((item.price >= 1100 ? item.price + 60 : item.price >= 900 ? item.price + 50 : item.price >=  700 ? item.price + 40 : item.price >= 500 ? item.price + 30 : item.price + 19) * curs) - (((item.price >= 1100 ? item.price + 60 : item.price >= 900 ? item.price + 50 : item.price >=  700 ? item.price + 40 : item.price >= 500 ? item.price + 30 : item.price + 19) * curs) / 100 * 20)) / 100 * 20.104) / 3).toLocaleString() + "UZS"} </h1>
+                                                <h1 className="font-bold">6-ой {Math.round((((item.price >= 1100 ? item.price + 60 : item.price >= 900 ? item.price + 50 : item.price >=  700 ? item.price + 40 : item.price >= 500 ? item.price + 30 : item.price + 19) * curs) - (((item.price >= 1100 ? item.price + 60 : item.price >= 900 ? item.price + 50 : item.price >=  700 ? item.price + 40 : item.price >= 500 ? item.price + 30 : item.price + 19) * curs) / 100 * 20) + (((item.price >= 1100 ? item.price + 60 : item.price >= 900 ? item.price + 50 : item.price >=  700 ? item.price + 40 : item.price >= 500 ? item.price + 30 : item.price + 19) * curs) - (((item.price >= 1100 ? item.price + 60 : item.price >= 900 ? item.price + 50 : item.price >=  700 ? item.price + 40 : item.price >= 500 ? item.price + 30 : item.price + 19) * curs) / 100 * 20)) / 100 * 36.757) / 6).toLocaleString() + "UZS"} </h1>
+                                                <h1 className="font-bold">12-ой {Math.round((((item.price >= 1100 ? item.price + 60 : item.price >= 900 ? item.price + 50 : item.price >=  700 ? item.price + 40 : item.price >= 500 ? item.price + 30 : item.price + 19) * curs) - (((item.price >= 1100 ? item.price + 60 : item.price >= 900 ? item.price + 50 : item.price >=  700 ? item.price + 40 : item.price >= 500 ? item.price + 30 : item.price + 19) * curs) / 100 * 20) + (((item.price >= 1100 ? item.price + 60 : item.price >= 900 ? item.price + 50 : item.price >=  700 ? item.price + 40 : item.price >= 500 ? item.price + 30 : item.price + 19) * curs) - (((item.price >= 1100 ? item.price + 60 : item.price >= 900 ? item.price + 50 : item.price >=  700 ? item.price + 40 : item.price >= 500 ? item.price + 30 : item.price + 19) * curs) / 100 * 20)) / 100 * 74) / 12).toLocaleString() + "UZS"} </h1>
+                                            </div>
+                                        </>
+                                    ))
+                                }
+                            </div>
                             <div className="bg-violet-700 p-1 text-white rounded-md">
                                 {
                                     item.memory.map(item => (
-                                        <div className="w-[481px] flex items-center justify-between gap-2 p-1">
-                                            <h1 className="font-bold">{item.name}ㅤㅤㅤㅤㅤㅤㅤ 6-ой {Math.round((((item.price + (item.price / 100 * 35)) + ((item.price + (item.price / 100 * 35)) / 100 * 22)) * curs) / 6).toLocaleString()} UZS</h1>
-                                            <h1 className="font-bold">12-ой {Math.round((((item.price + (item.price / 100 * 35)) + ((item.price + (item.price / 100 * 35)) / 100 * 44)) * curs) / 12).toLocaleString()} UZS</h1>
+                                        <div className="flex items-center justify-between gap-2 p-1">
+                                            <h1 className="font-bold">{item.name}ㅤㅤㅤㅤㅤㅤㅤ 6-ой {Math.round((((item.price + (item.price / 100 * 35)) + ((item.price + (item.price / 100 * 35)) / 100 * 22)) * curs) / 6).toLocaleString() + "UZS"} </h1>
+                                            <h1 className="font-bold">12-ой {Math.round((((item.price + (item.price / 100 * 35)) + ((item.price + (item.price / 100 * 35)) / 100 * 44)) * curs) / 12).toLocaleString() + "UZS"} </h1>
                                         </div>
                                     ))
                                 }
@@ -57,9 +79,9 @@ export default function DefaultModal({ item, setYes }) {
                             <div className="bg-red-700 p-1 text-white rounded-md">
                                 {
                                     item.memory.map(item => (
-                                        <div className="w-[481px] flex items-center justify-between gap-2 p-1">
+                                        <div className="flex items-center justify-between gap-2 p-1">
                                             {/* <h1>{item.name}ㅤㅤㅤㅤㅤㅤㅤ 6-ой {Math.round((((item.price + (item.price / 100 * 35)) + ((item.price + (item.price / 100 * 35)) / 100 * 26)) * curs) / 6)} UZS</h1> */}
-                                            <h1 className="font-bold">{item.name}ㅤㅤㅤㅤㅤㅤㅤ 12-ой {Math.round((((item.price + (item.price / 100 * 50)) + ((item.price + (item.price / 100 * 50)) / 100 * 22)) * curs) / 12).toLocaleString()} UZS</h1>
+                                            <h1 className="font-bold">{item.name}ㅤㅤㅤㅤㅤㅤㅤ 12-ой {Math.round((((item.price + (item.price / 100 * 50)) + ((item.price + (item.price / 100 * 50)) / 100 * 22)) * curs) / 12).toLocaleString() + "UZS"} </h1>
                                         </div>
                                     ))
                                 }

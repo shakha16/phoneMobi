@@ -16,7 +16,7 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 13",
         ves: "192 г.",
-        memory: [{ name: "4/128", price: 117},{ name: "8/256", price: 137},{ name: "6/128", price: 127}],
+        memory: [{ name: "4/128", price: 116},{ name: "6/128", price: 126},{ name: "8/256", price: 136}],
         color: [{ name: "#9AFF8B" }, { name: "black" }],
     },
     {
@@ -29,7 +29,7 @@ let phones = [
         batery: "5100 мАч",
         os: "Android 13",
         ves: "187 г.",
-        memory: [{name: "8/128", price: 250},{ name: "8/256", price: 260 }, { name: "12/512", price: 305}],
+        memory: [{name: "8/128", price: 250},{ name: "8/256", price: 260}, { name: "12/512", price: 305}],
         color: [{ name: "black" }, { name: "#50C878" }, { name: "#8182B8" }]
     },
     {
@@ -161,7 +161,7 @@ let phones = [
         batery: "3700 мАч",
         os: "Android 14",
         ves: "187 г.",
-        memory: [{ name: "8/512", price: " 8 840 000 UZS         " }, { name: "8/256", price: " 8 466 000 UZS         " }],
+        memory: [{ name: "8/512", price: 705}, { name: "8/256", price: 690}],
         color: [{ name: "black" }, { name: "#3BAF84" }]
     },
     {
