@@ -327,7 +327,7 @@ let phones = [
         display: "6.79 IPS LCD - 1080 x 2460",
         chip: "MediaTek Helio G88",
         camera: "3 (50 MP + 8 MP + 2 MP)",
-        batery: "3 (50 MP + 8 MP + 2 MP)",
+        batery: "5000 мАч",
         os: "Android 14",
         ves: "198.5 г.",
         memory: [{ name: "8/256", price: 160}, { name: "4/128", price: 140}],
