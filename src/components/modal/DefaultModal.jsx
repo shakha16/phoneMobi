@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 
 export default function DefaultModal({ item, setYes }) {
-    const [curs, setCurs] = useState(12650)
+    const [curs, setCurs] = useState(12700)
     // function nalPrice() {
     //     return ((item.price >= 1100 ? item.price + 60 : item.price >= 900 ? item.price + 50 : item.price >= 700 ? item.price + 40 : item.price >= 500 ? item.price + 30 : item.price + 18) * curs).toLocaleString()
     // }

@@ -32,19 +32,19 @@ let phones = [
         memory: [{ name: "8/256", price: 236}, { name: "12/512", price: 281 }],
         color: [{ name: "black" }, { name: "#50C878" }, { name: "#8182B8" }]
     },
-    // {
-    //     id: 3,
-    //     name: 'SAMSUNG A54',
-    //     img: 'https://images.uzum.uz/cleniqdennt1kt4d7ssg/original.jpg',
-    //     display: "6.4 AMOLED - 1080 x 2340",
-    //     chip: " Samsung Exynos 1380",
-    //     camera: "3 (50 MP + 12 MP + 5 MP)",
-    //     batery: "5000 мАч",
-    //     os: "Android 14",
-    //     ves: " 202 г.",
-    //     memory: [{ name: "8/128", price: 285 }],
-    //     color: [{ name: "black" }, { name: "green" }, { name: "violet" }]
-    // },
+    {
+        id: 3,
+        name: 'Redmi 13',
+        img: 'https://assets.asaxiy.uz/product/items/desktop/a7e2144b232cca6e94d83b23c1b108be2024071114283616290xRtHbimBTz.webp',
+        display: "6.79 IPS LCD - 1080 x 2460",
+        chip: "MediaTek Helio G91 Ultra",
+        camera: "2 (108 MP + 2 MP)",
+        batery: "5030 мАч",
+        os: "Android 14",
+        ves: " 205 г.",
+        memory: [{ name: "6/128", price: 150 }, { name: "8/128", price: 160 }, { name: "8/256", price: 170 }],
+        color: [{ name: "black" }, { name: "green" }, { name: "violet" }]
+    },
     {
         id: 4,
         name: 'S24 Ultra',
@@ -55,8 +55,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 14",
         ves: "232 г.",
-        memory: [{ name: "12/512", price: 1030 }, { name: "12/256", price: 945 }],
-        color: [{ name: "black" }, { name: "yellow" }, { name: "violoet" }]
+        memory: [{ name: "12/512", price: 1048 }, { name: "12/256", price: 945 }],
+        color: [{ name: "black" }, { name: "yellow" }, { name: "violoet" }, { name: "gray" }]
     },
     // {
     //     id: 5,
@@ -96,8 +96,8 @@ let phones = [
         batery: "5000 mAh",
         os: "Android 14",
         ves: "195 г",
-        memory: [{ name: "12/256", price: 750}],
-        color: [{ name: "black" }, { name: "violet" }, { name: "yellow" }, { name: "gray" }]
+        memory: [{ name: "12/512", price: 926}],
+        color: [{ name: "violet" }, { name: "yellow" }, { name: "gray" }]
     },
     {
         id: 8,
@@ -109,8 +109,8 @@ let phones = [
         batery: "4000 мАч",
         os: "Android 14",
         ves: "167 г.",
-        memory: [{ name: "8/256", price: 635 }, { name: "8/128", price: 590 }],
-        color: [{ name: "black" }, { name: "gray" }]
+        memory: [{ name: "8/256", price: 708 }, { name: "8/128", price: 662 }],
+        color: [{ name: "black" }, { name: "violet" }]
     },
     {
         id: 9,
@@ -148,7 +148,7 @@ let phones = [
         batery: "4400 мАч",
         os: "Android 14",
         ves: "253 г.",
-        memory: [{ name: "12/512", price: 1220 }, { name: "12/256", price: 1135 }],
+        memory: [{ name: "12/256", price: 1095 }],
         color: [{ name: "black" }, { name: "blue" }, { name: "#fffdd0" }]
     },
     {
@@ -265,7 +265,7 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 14",
         ves: "200 г.",
-        memory: [{ name: "6/128", price: 150 }, { name: "8/256", price: 162 }],
+        memory: [{ name: "6/128", price: 151 }, { name: "8/256", price: 181 }],
         color: [{ name: "black" }, { name: "white" }, { name: "blue" }]
     },
     // {
@@ -291,7 +291,7 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 13",
         ves: "194 г.",
-        memory: [{ name: "6/128", price: 128 }],
+        memory: [{ name: "6/128", price: 131 }],
         color: [{ name: "black" }, { name: "silver" }]
     },
     // {
@@ -580,45 +580,45 @@ let phones = [
         memory: [{ name: "4/128", price: 99 }],
         color: [{ name: "black" }]
     },
-    // {
-    //     id: 46,
-    //     name: 'Pop 7',
-    //     img: 'https://olcha.uz/image/400x400/products/supplier/stores/1/2023-05-10/socUKY5Ruw7oYiUl9FQ56serOemnJzwU3uNDe2tsGbBduNrdpLWAOI7ikM8u.jpg',
-    //     display: "6.6 LCD|IPS - 720 x 1612",
-    //     chip: "Mediatek Helio A22",
-    //     camera: "1 (8 МП + 5 МП)",
-    //     batery: "5000 мАч",
-    //     os: "Android 12",
-    //     ves: "182",
-    //     memory: [{ name: "64gb", price: 67 }],
-    //     color: [{ name: "black" }]
-    // },
+    {
+        id: 46,
+        name: 'Smart 8',
+        img: 'https://mini-io-api.texnomart.uz/catalog/product/3567/356745/195303/8f43790b-a15e-4f96-9a65-0dea2586d990.webp',
+        display: "6.6 IPS LCD - 720 x 1612",
+        chip: "Unisoc T606",
+        camera: "2 (13 MP)",
+        batery: "5000 мАч",
+        os: "Android 13",
+        ves: "184",
+        memory: [{ name: "4/64gb", price: 77 },{ name: "6/64gb", price: 81 },{ name: "8/64gb", price: 90 },{ name: "8/128", price: 94 }],
+        color: [{ name: "black" },{ name: "white" },{ name: "gold" },{ name: "green" }]
+    },
     {
         id: 47,
         name: 'Smart 8 pro',
-        img: 'data:image/jpeg;base64,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',
-        display: "IPS HD+, 6.56 1612x720",
-        chip: "Unisoc t606",
-        camera: "2 (13 MP + 0.3 MP)",
+        img: 'https://mini-io-api.texnomart.uz/catalog/product/3568/356832/196031/ea853b02-8053-4027-9479-8167b0d23b5c.webp',
+        display: "6.6 IPS LCD - 720 x 1612",
+        chip: "MediaTek Helio G36",
+        camera: "2 (50 MP)",
         batery: "5000 мАч",
-        os: "Android 12",
-        ves: "175",
-        memory: [{ name: "4/128", price: 97 }, { name: "4/64", price: 90 }],
-        color: [{ name: "black" }]
+        os: "Android 13",
+        ves: "190",
+        memory: [{ name: "8/256", price: 113 },{ name: "8/128", price: 100 }, { name: "64gb", price: 91 }],
+        color: [{ name: "black" },{ name: "gold" },{ name: "white" },{ name: "blue" }]
     },
-    // {
-    //     id: 48,
-    //     name: "Hot 30 I",
-    //     img: 'https://mini-io-api.texnomart.uz/catalog/product/3564/356447/193697/0d1a8028-2df0-4d29-86ae-4ec328c487de.webp',
-    //     display: "6.56 IPS LCD - 720 x 1612",
-    //     chip: "Unisoc t606",
-    //     camera: "2 (13 MP)",
-    //     batery: "5000 мАч",
-    //     os: "Android 12",
-    //     ves: "191 г.",
-    //     memory: [{ name: "8/128", price: 93 }],
-    //     color: [{ name: "black" }]
-    // },
+    {
+        id: 48,
+        name: "Infinix GT 20 Pro",
+        img: 'https://img.mobgsm.com/pictures/infinix/infinix-gt-20-pro-11.webp',
+        display: "6.78 AMOLED - 1080 x 2436",
+        chip: "MediaTek Dimensity 8200 Ultimate",
+        camera: "3 (108 MP + 2 MP + 2 MP)",
+        batery: "5000 мАч",
+        os: "Android 14",
+        ves: "194 г.",
+        memory: [{ name: "8/256", price: 325 }],
+        color: [{ name: "blue" },{ name: "white" }]
+    },
     {
         id: 49,
         name: 'Hot 40 I',
@@ -629,8 +629,8 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 13",
         ves: "190 г.",
-        memory: [{ name: "8/128", price: 107 }],
-        color: [{ name: "black" }]
+        memory: [{ name: "4/128", price: 102 },{ name: "8/128", price: 117 },{ name: "8/256", price: 149 }],
+        color: [{ name: "black" },{ name: "blue" },{ name: "green" },{ name: "gold" }]
     },
     {
         id: 50,
@@ -881,19 +881,19 @@ let phones = [
         memory: [{ name: "8/256", price: 263 }],
         color: [{ name: "black" }, { name: "white" }]
     },
-    // {
-    //     id: 73,
-    //     name: 'Honor 90',
-    //     img: 'https://assets.asaxiy.uz/product/items/desktop/abc99d6b9938aa86d1f30f8ee0fd169f2023072412440326146tcGNfwpIJx.png.webp',
-    //     display: "6.7 AMOLED - 1200 x 2664",
-    //     chip: "Snapdragon 7 Gen 1 ",
-    //     camera: "3 (200 MP + 12 MP + 2 MP)",
-    //     batery: "5000 мАч",
-    //     os: "Android 13",
-    //     ves: "183 г.",
-    //     memory: [{ name: "8/256", price: 460 }, { name: "12/512", price: 490 }],
-    //     color: [{ name: "black" }, { name: "white" }],
-    // },
+    {
+        id: 73,
+        name: 'Honor 90 Lite',
+        img: 'https://m.media-amazon.com/images/I/414Prf-0KyL._SL160_.jpg',
+        display: "6.7 IPS LCD - 1080 x 2388",
+        chip: "MediaTek Dimensity 6020",
+        camera: "3 (100 MP + 5 MP + 2 MP)",
+        batery: "4500 мАч",
+        os: "Android 13",
+        ves: "179 г.",
+        memory: [{ name: "8/256", price: 236 }],
+        color: [{ name: "black" }],
+    },
     // {
     //     id: 74,
     //     name: 'Honor 70',
@@ -917,7 +917,7 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 14",
         ves: "213 г.",
-        memory: [{ name: "8/128", price: 311 }, { name: "8/256", price: 357 }],
+        memory: [{ name: "8/128", price: 331 }, { name: "8/256", price: 367 }],
         color: [{ name: "black" }, { name: "blue" }, { name: "white" }]
     },
     {
@@ -930,7 +930,7 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 14",
         ves: "209 г.",
-        memory: [{ name: "8/128", price: 264 }, { name: "8/256", price: 316 }],
+        memory: [{ name: "8/128", price: 281 }, { name: "8/256", price: 316 }],
         color: [{ name: "black" }, { name: "blue" }, { name: "white" }]
     },
     {
@@ -956,7 +956,7 @@ let phones = [
         batery: "8000 мАч",
         os: "Android 14",
         ves: "503 г.",
-        memory: [{ name: "8/128", price: "751" }],
+        memory: [{ name: "8/128", price: 751 }],
         color: [{ name: "black" }]
     },
     {
@@ -969,8 +969,21 @@ let phones = [
         batery: "5100 мАч",
         os: "Android 13",
         ves: "333 г.",
-        memory: [{ name: "4/64", price: "191" }],
-        color: [{ name: "white" }]
+        memory: [{ name: "4/64", price: 159 }],
+        color: [{ name: "white" },{ name: "grey" }]
+    },
+    {
+        id: 79.1,
+        name: 'Galaxy Tab A9+',
+        img: 'https://m.media-amazon.com/images/I/31x-7ESAiHL._SL160_.jpg',
+        display: "11 TFT LCD - 1200 x 1920",
+        chip: "Snapdragon 695",
+        camera: "1 (8 MP)",
+        batery: "7040 мАч",
+        os: "Android 13",
+        ves: "480 г.",
+        memory: [{ name: "4/64", price: 230 },{ name: "8/128", price: 252 }],
+        color: [{ name: "white" },{ name: "grey" }]
     },
     {
         id: 80,
@@ -982,7 +995,7 @@ let phones = [
         batery: "8000 мАч",
         os: "Android 13",
         ves: "478 г.",
-        memory: [{ name: "8/256", price: "154" }],
+        memory: [{ name: "8/256", price: 154 }],
         color: [{ name: "gray" }]
     },
     {
@@ -995,7 +1008,7 @@ let phones = [
         batery: "7250 мАч",
         os: "Android 13",
         ves: "499 г.",
-        memory: [{ name: "4/128", price: "226" }],
+        memory: [{ name: "4/128", price: 226 }],
         color: [{ name: "black" }]
     },
     {
@@ -1008,7 +1021,7 @@ let phones = [
         batery: "8840 мАч",
         os: "Android 14",
         ves: "490 г.",
-        memory: [{ name: "8/256", price: "316" }],
+        memory: [{ name: "8/256", price: 316 }],
         color: [{ name: "gray" }, { name: "gold" }]
     },
     {
@@ -1021,7 +1034,7 @@ let phones = [
         batery: "10000 мАч",
         os: "Android 14",
         ves: "590 г.",
-        memory: [{ name: "8/256", price: "456" }],
+        memory: [{ name: "8/256", price: 456 }],
         color: [{ name: "gray" }]
     },
     {
@@ -1034,13 +1047,13 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 14",
         ves: "197.5 г.",
-        memory: [{ name: "8/256", price: "221" }],
+        memory: [{ name: "8/256", price: 221 }],
         color: [{ name: "black" },{ name: "white" }]
     },
     {
         id: 85,
         name: 'Tecno Pova 6',
-        img: '',
+        img: 'https://assets.asaxiy.uz/product/items/desktop/37693cfc748049e45d87b8c7d8b9aacd2024061511465361550nMn2czGEOf.jpg',
         display: "6.78 AMOLED - 1080 x 2460",
         chip: "MediaTek Helio G99 Ultimate",
         camera: "2 (108 MP + 2 MP)",
@@ -1052,17 +1065,173 @@ let phones = [
     },
     {
         id: 86,
-        name: '',
-        img: '',
-        display: "",
+        name: 'Tecno Pova 6 Neo',
+        img: 'https://d3fyizz0b46qgr.cloudfront.net/global/phones/pova6/800%2A800/6neo/%E9%BB%91.png',
+        display: "6.78 IPS LCD - 1080 x 2460",
+        chip: "MediaTek Helio G99 Ultimate",
+        camera: "2 (108 MP + 2 MP)",
+        batery: "7000 мАч",
+        os: "Android 14",
+        ves: "206 г",
+        memory: [{ name: "8/128", price: 171 }, { name: "8/256", price: 181 }],
+        color: [{ name: "black" }, { name: "white" }]
+    },
+    {
+        id: 87,
+        name: 'Galaxy Z Fold 3',
+        img: 'https://static.rozetked.me/imager/full/images/uploads/webp/3PPaYZvzkcGd.webp',
+        display: "7.6 Dynamic AMOLED - 1768 x 2208",
+        chip: "Snapdragon 888",
+        camera: "3 (12 MP + 12 MP + 12 MP)",
+        batery: "4400 мАч",
+        os: "Android 14",
+        ves: "271 г.",
+        memory: [{ name: "12/256", price: 600 }],
+        color: [{ name: "gray" },{ name: "white" }]
+    },
+    {
+        id: 88,
+        name: 'Xiaomi 14 Ultra',
+        img: 'https://unite4buy.ru/resize/-/600/media/images/2024/02/24/xiaomi-14-ultra-1_6hyRdB0.jpg',
+        display: "6.73 AMOLED - 1440 x 3200",
+        chip: "Snapdragon 8 Gen 3",
+        camera: "5 (50 MP + 50 MP + 50 MP + 50 MP)",
+        batery: "5000 мАч",
+        os: "Android 14",
+        ves: "220 г.",
+        memory: [{ name: "16/512", price: 1100 }],
+        color: [{ name: "black" }, { name: "white" }]
+    },
+    {
+        id: 89,
+        name: 'Redmi A3',
+        img: 'https://mi-store.uz/wp-content/uploads/2024/03/d6055fc522ee7e2ef13fdc38612135ac_800x800_100_min.png',
+        display: "6.71 IPS LCD - 720 x 1650",
+        chip: "MediaTek Helio G36",
+        camera: "2 (8 MP)",
+        batery: "5000 мАч",
+        os: "Android 14",
+        ves: "199 г.",
+        memory: [{ name: "3/64", price: 88 }, { name: "4/128", price: 98 }],
+        color: [{ name: "black" }, { name: "blue" }, { name: "green" }]
+    },
+    {
+        id: 90,
+        name: 'Apple Watch 9',
+        img: 'https://static.beeline.ru/shop/media/goods/fullsize/8589fc9b-6231-43f1-9d1f-e69484153f73.jpg',
+        display: "1.9 OLED/AMOLED",
+        chip: "45mm 5.000.000",
+        camera: "41mm 4.650.000",
+        batery: "0.75 дней",
+        os: "",
+        ves: "38.8 г.",
+        memory: [{ name: "6/128", price: "" }],
+        color: [{ name: "black" }, { name: "blue" }]
+    },
+    {
+        id: 91,
+        name: 'Apple Watch SE 2',
+        img: 'https://nanoreview.pro/media/8c9e82002d987832140efee49b962f5f.jpg',
+        display: "1.78 OLED/AMOLED",
+        chip: "40mm 3.100.000",
+        camera: "44mm 3.500.000",
+        batery: "0.75 дней",
+        os: "",
+        ves: "36.2 г.",
+        memory: [{ name: "6/128", price: "" }],
+        color: [{ name: "black" }]
+    },
+    {
+        id: 92,
+        name: 'Apple Watch Ultra 2',
+        img: 'https://nanoreview.pro/media/83428829d43d8000c43c4e17d72e9eec.jpg',
+        display: "1.92 OLED/AMOLED",
+        chip: "8/49mm 9.500.000",
+        camera: "",
+        batery: "1.5 день",
+        os: "",
+        ves: "61.3 г.",
+        memory: [{ name: "6/128", price: "" }],
+        color: [{ name: "white" }]
+    },
+    {
+        id: 93,
+        name: 'AirPods org',
+        img: 'https://spphone.uz/wp-content/uploads/2021/03/naushnik-bluetooth-hoco-airpods-es46-paragraf.uz-kredit-kredit-rassrochka-1.jpg',
+        display: "2.1 1.500.000",
+        chip: "Pro 2 3.000.000",
+        camera: "3 2.100.000",
+        batery: "",
+        os: "",
+        ves: "",
+        memory: [{ name: "2.1", price:  1}],
+        color: [{ name: "black" }, { name: "" }, { name: "white" }]
+    },
+    {
+        id: 94,
+        name: 'AirPods',
+        img: 'https://spphone.uz/wp-content/uploads/2021/03/naushnik-bluetooth-hoco-airpods-es46-paragraf.uz-kredit-kredit-rassrochka-1.jpg',
+        display: "Pro Ans 160.000",
         chip: "",
         camera: "",
         batery: "",
         os: "",
         ves: "",
-        memory: [{ name: "6/128", price: "" }, { name: "8/128", price: "" }, { name: "8/256", price: "" }],
-        color: [{ name: "black" }, { name: "" }, { name: "white" }]
+        memory: [{ name: "6/128", price: "" }],
+        color: [{ name: "black" }, { name: "white" }]
     },
+    {
+        id: 95,
+        name: 'Airpods Max org',
+        img: 'https://brostore.uz/cdn/shop/files/5_6c330d7d-3719-4524-82ed-f38a69581b0c.png?v=1698238915',
+        display: "6.200.000",
+        chip: "",
+        camera: "",
+        batery: "",
+        os: "",
+        ves: "",
+        memory: [{ name: "6/128", price: ""}],
+        color: [{ name: "black" }, { name: "blue" }, { name: "white" }, { name: "red" }]
+    },
+    {
+        id: 96,
+        name: 'AirPods Max',
+        img: 'https://brostore.uz/cdn/shop/files/5_6c330d7d-3719-4524-82ed-f38a69581b0c.png?v=1698238915',
+        display: "250.000",
+        chip: "",
+        camera: "",
+        batery: "",
+        os: "",
+        ves: "",
+        memory: [{ name: "6/128", price: "" }],
+        color: [{ name: "black" }, { name: "blue" }, { name: "white" }, { name: "red" }]
+    },
+    // {
+    //     id: 97,
+    //     name: '',
+    //     img: '',
+    //     display: "",
+    //     chip: "",
+    //     camera: "",
+    //     batery: "",
+    //     os: "",
+    //     ves: "",
+    //     memory: [{ name: "6/128", price: "" }, { name: "8/128", price: "" }, { name: "8/256", price: "" }],
+    //     color: [{ name: "black" }, { name: "" }, { name: "white" }]
+    // },
+    // {
+    //     id: 98,
+    //     name: '',
+    //     img: '',
+    //     display: "",
+    //     chip: "",
+    //     camera: "",
+    //     batery: "",
+    //     os: "",
+    //     ves: "",
+    //     memory: [{ name: "6/128", price: "" }, { name: "8/128", price: "" }, { name: "8/256", price: "" }],
+    //     color: [{ name: "black" }, { name: "" }, { name: "white" }]
+    // },
 ]
 
 phones.map(item => (

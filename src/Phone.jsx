@@ -20,7 +20,7 @@ export default function Phone({ item }) {
                 <div className="text flex justify-center items-center h-[20%]">
                     <h1 className="text-[30px]">{item.name}</h1>
                 </div>
-            </div> 
+            </div>
             {yes && (
                 <DefaultModal item={item} setYes={setYes} />
             )}
