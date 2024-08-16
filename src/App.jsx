@@ -17,7 +17,7 @@ let phones = [
         os: "Android 13",
         ves: "192 г.",
         memory: [{ name: "4/128", price: 114 }, { name: "6/128", price: 125 }, { name: "8/256", price: 135 }],
-        color: [{ name: "#9AFF8B" }, { name: "black" }],
+        color: [{ name: "#9AFF8B" }, { name: "black" }, { name: "blue" }]
     },
     {
         id: 2,
@@ -642,7 +642,7 @@ let phones = [
         batery: "3274 мАч",
         os: "iOS 17.3",
         ves: "187 г.",
-        memory: [{ name: "128gb", price: 950 }, { name: "256gb", price: 1070 }],
+        memory: [{ name: "128gb", price: 1000 }, { name: "256gb", price: 1100 }],
         color: [{ name: "black" }, { name: "blue" }]
     },
     {
@@ -655,7 +655,7 @@ let phones = [
         batery: "4441 мАч",
         os: "iOS 17.3",
         ves: "221 г.",
-        memory: [{ name: "256gb", price: 1150 }, { name: "512gb", price: 1299 }, { name: "1tb", price: 1450 }],
+        memory: [{ name: "256gb", price: 1150 }, { name: "512gb", price: 1300 }, { name: "1tb", price: 1500 }],
         color: [{ name: "black" }, { name: "blue" }]
     },
     {
@@ -668,7 +668,7 @@ let phones = [
         batery: "3349 мАч",
         os: "iOS 17.3",
         ves: "171 г.",
-        memory: [{ name: "128gb", price: 749 }, { name: "256gb", price: 920 }],
+        memory: [{ name: "128gb", price: 750 }, { name: "256gb", price: 920 }],
         color: [{ name: "white" }]
     },
     {
@@ -694,7 +694,7 @@ let phones = [
         batery: "3274 мАч",
         os: "iOS 17.3",
         ves: "187 г.",
-        memory: [{ name: "128gb", price: 999 }, { name: "256gb", price: 1099 }],
+        memory: [{ name: "128gb", price: 1000 }, { name: "256gb", price: 1130 }],
         color: [{ name: "black" }, { name: "blue" }, { name: "white" }, { name: "#B7A28B" }]
     },
     {
@@ -707,7 +707,7 @@ let phones = [
         batery: "4441 мАч",
         os: "iOS 17.3",
         ves: "221 г.",
-        memory: [{ name: "256gb", price: 1199 }, { name: "512gb", price: 1400 }, { name: "1tb", price: 1650 }],
+        memory: [{ name: "256gb", price: 1200 }, { name: "512gb", price: 1400 }, { name: "1tb", price: 1650 }],
         color: [{ name: "black" }, { name: "blue" }, { name: "white" }, { name: "#B7A28B" }]
     },
     {
@@ -720,7 +720,7 @@ let phones = [
         batery: "3349 мАч",
         os: "iOS 17.3",
         ves: "171 г.",
-        memory: [{ name: "128gb", price: 769 }, { name: "256gb", price: 930 }],
+        memory: [{ name: "128gb", price: 780 }, { name: "256gb", price: 930 }],
         color: [{ name: "white" }]
     },
     {
