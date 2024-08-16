@@ -24,7 +24,7 @@ let phones = [
         name: 'Redmi Note 13 Pro',
         img: 'https://static.sello.uz/unsafe/x500/https://static.sello.uz/fm/20240115/7f370e311e72dd4802338d50f28c4daf.png',
         display: "6.67 AMOLED - 1220 x 2712",
-        chip: "Qualcomm Snapdragon 7s Gen 2",
+        chip: "Snapdragon 7s Gen 2",
         camera: "3 (200 MP + 8 MP + 2 MP)",
         batery: "5100 мАч",
         os: "Android 13",
@@ -265,7 +265,7 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 14",
         ves: "200 г.",
-        memory: [{ name: "6/128", price: 151 }, { name: "8/256", price: 181 }],
+        memory: [{ name: "6/128", price: 148.8 }, { name: "8/256", price: 181 }],
         color: [{ name: "black" }, { name: "white" }, { name: "blue" }]
     },
     // {
@@ -894,19 +894,6 @@ let phones = [
         memory: [{ name: "8/256", price: 236 }],
         color: [{ name: "black" }],
     },
-    // {
-    //     id: 74,
-    //     name: 'Honor 70',
-    //     img: 'https://olcha.uz/image/400x400/products/l1GIkg2U12o2DZATjpVGRgSp4EYREGTgCSnLCWgtrLz5KHu7OWom5aXUaaFV.jpg',
-    //     display: "6.67 OLED - 1080 x 2400",
-    //     chip: "Snapdragon 778G Plus",
-    //     camera: "3 (54 MP + 50 MP + 2 MP)",
-    //     batery: "4800 мАч",
-    //     os: "Android 13",
-    //     ves: "178 г.",
-    //     memory: [{ name: "8/128", price: 430 }],
-    //     color: [{ name: "black" }, { name: "white" }]
-    // },
     {
         id: 75,
         name: 'SAMSUNG A55',
@@ -917,7 +904,7 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 14",
         ves: "213 г.",
-        memory: [{ name: "8/128", price: 331 }, { name: "8/256", price: 367 }],
+        memory: [{ name: "8/128", price: 329.1 }, { name: "8/256", price: 366 }],
         color: [{ name: "black" }, { name: "blue" }, { name: "white" }]
     },
     {
@@ -930,7 +917,7 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 14",
         ves: "209 г.",
-        memory: [{ name: "8/128", price: 281 }, { name: "8/256", price: 316 }],
+        memory: [{ name: "8/128", price: 278.7 }, { name: "8/256", price: 315 }],
         color: [{ name: "black" }, { name: "blue" }, { name: "white" }]
     },
     {
@@ -943,7 +930,7 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 14",
         ves: "197 г.",
-        memory: [{ name: "6/128", price: 217 }],
+        memory: [{ name: "6/128", price: 216 }],
         color: [{ name: "black" }, { name: "blue" }, { name: "white" }]
     },
     {
