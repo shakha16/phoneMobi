@@ -517,7 +517,7 @@ let phones = [
     },
     {
         id: 42,
-        name: 'Spark 20 Pro',
+        name: 'Infinix Spark 20 Pro',
         img: 'https://olcha.uz/image/400x400/products/supplier/stores/1/2024-01-15/8DZnjurFXJBlPhm1KWM1X0FZMbw5iHGInU22lLBTdX8gz1KzxmF1RSdJyrAR.jpg',
         display: "6.78 FHD+",
         chip: "MediaTek HELIO G99",
@@ -530,7 +530,7 @@ let phones = [
     },
     {
         id: 42.1,
-        name: 'Spark 20 Pro +',
+        name: 'Infinix Spark 20 Pro +',
         img: 'https://d3fyizz0b46qgr.cloudfront.net/global/phones/SPARK_20_Pro_Plus/KJ7_%E5%85%AD%E8%A7%86%E5%9B%BE_%E6%97%B6%E7%A9%BA%E6%98%9F%E8%BD%A8%E9%BB%91_V3.1_20231105.png',
         display: "6.78 AMOLED - 1080 x 2436",
         chip: "MediaTek Helio G99 Ultimate",
@@ -543,7 +543,7 @@ let phones = [
     },
     {
         id: 43,
-        name: 'Spark 20',
+        name: 'Infinix Spark 20',
         img: 'https://d3fyizz0b46qgr.cloudfront.net/global/phones/SPARK_20C/spark20/TECNO_KJ5_%E7%A7%91%E6%8A%80%E8%82%A4%E6%84%9F%E8%93%9D%EF%BC%88Magic%20Skin%20Blue%EF%BC%89_%E5%85%AD%E8%A7%86%E5%9B%BE_20230728.png',
         display: "6.6 IPS LCD - 720 x 1612",
         chip: "MediaTek Helio G85",
@@ -556,7 +556,7 @@ let phones = [
     },
     {
         id: 44,
-        name: 'Spark 20C',
+        name: 'Infinix Spark 20C',
         img: 'data:image/jpeg;base64,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',
         display: "6.6 IPS LCD - 720 x 1612",
         chip: "MediaTek Helio G36",
@@ -569,7 +569,7 @@ let phones = [
     },
     {
         id: 45,
-        name: 'Spark Go 2024',
+        name: 'Infinix Spark Go 2024',
         img: 'https://assets.asaxiy.uz/product/items/desktop/354ceb01525cff8c7c93ee5027e5367b2023121611454132974drooXbRZ10.jpeg.webp',
         display: "6.6 IPS LCD - 720 x 1600",
         chip: "Mediatek Helio A22",
@@ -582,7 +582,7 @@ let phones = [
     },
     {
         id: 46,
-        name: 'Smart 8',
+        name: 'Infinix Smart 8',
         img: 'https://mini-io-api.texnomart.uz/catalog/product/3567/356745/195303/8f43790b-a15e-4f96-9a65-0dea2586d990.webp',
         display: "6.6 IPS LCD - 720 x 1612",
         chip: "Unisoc T606",
@@ -590,12 +590,12 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 13",
         ves: "184",
-        memory: [{ name: "4/64gb", price: 77 },{ name: "6/64gb", price: 81 },{ name: "8/64gb", price: 90 },{ name: "8/128", price: 94 }],
+        memory: [{ name: "4/64gb", price: 76 },{ name: "6/64gb", price: 80 },{ name: "8/64gb", price: 89 }, { name: "8/128", price: 93 }],
         color: [{ name: "black" },{ name: "white" },{ name: "gold" },{ name: "green" }]
     },
     {
         id: 47,
-        name: 'Smart 8 pro',
+        name: 'Infinix Smart 8 pro',
         img: 'https://mini-io-api.texnomart.uz/catalog/product/3568/356832/196031/ea853b02-8053-4027-9479-8167b0d23b5c.webp',
         display: "6.6 IPS LCD - 720 x 1612",
         chip: "MediaTek Helio G36",
@@ -603,7 +603,7 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 13",
         ves: "190",
-        memory: [{ name: "8/256", price: 113 },{ name: "8/128", price: 100 }, { name: "64gb", price: 91 }],
+        memory: [{ name: "8/256", price: 112 },{ name: "8/128", price: 99 }, { name: "64gb", price: 90 }],
         color: [{ name: "black" },{ name: "gold" },{ name: "white" },{ name: "blue" }]
     },
     {
@@ -621,7 +621,7 @@ let phones = [
     },
     {
         id: 49,
-        name: 'Hot 40 I',
+        name: 'Infinix Hot 40 I',
         img: 'https://cdn.kalvo.com/uploads/img/gallery/57465-infinix-hot-40-1.jpg',
         display: "6.56 IPS LCD - 720 x 1612",
         chip: "Unisoc T606",
@@ -629,8 +629,86 @@ let phones = [
         batery: "5000 мАч",
         os: "Android 13",
         ves: "190 г.",
-        memory: [{ name: "4/128", price: 102 },{ name: "8/128", price: 117 },{ name: "8/256", price: 149 }],
+        memory: [{ name: "4/128", price: 101 },{ name: "8/128", price: 116 },{ name: "8/256", price: 135 }],
         color: [{ name: "black" },{ name: "blue" },{ name: "green" },{ name: "gold" }]
+    },
+    {
+        id: 49.1,
+        name: 'Infinix Hot 40',
+        img: 'https://mini-io-api.texnomart.uz/catalog/product/3567/356742/195400/e500f8e5-7d48-40d9-a501-fdddd76e5371.webp',
+        display: "6.78 IPS LCD - 1080 x 2460",
+        chip: "Mediatek Helio G88",
+        camera: "3 (50 MP + 2 MP)",
+        batery: "5000 мАч",
+        os: "Android 13",
+        ves: "196 г.",
+        memory: [{ name: "8/128", price: 143 },{ name: "8/256", price: 148 }],
+        color: [{ name: "black" },{ name: "blue" },{ name: "green" },{ name: "gold" }]
+    },
+    {
+        id: 49.2,
+        name: 'Infinix Hot 40 Pro',
+        img: 'https://images.uzum.uz/cno3cqsu2hhlb05hmo1g/original.jpg',
+        display: "6.78 IPS LCD - 1080 x 2460",
+        chip: "Mediatek Helio G99",
+        camera: "3 (108 MP + 2 MP)",
+        batery: "5000 мАч",
+        os: "Android 13",
+        ves: "199 г.",
+        memory: [{ name: "8/256", price: 168 },{ name: "12/256", price: 174 }],
+        color: [{ name: "black" },{ name: "blue" },{ name: "green" },{ name: "gold" }]
+    },
+    {
+        id: 49.3,
+        name: 'Infinix Note 40',
+        img: 'https://mini-io-api.texnomart.uz/catalog/product/3571/357157/198093/633746fa-22c2-4d65-b35a-b91c1ad5aec6.webp',
+        display: "6.78 AMOLED - 1080 x 2436",
+        chip: "Mediatek Helio G99 Ultimate",
+        camera: "3 (108 MP + 2 MP)",
+        batery: "5000 мАч",
+        os: "Android 14",
+        ves: "190 г.",
+        memory: [{ name: "8/256", price: 207 }],
+        color: [{ name: "black" }, { name: "gold" }]
+    },
+    {
+        id: 49.4,
+        name: 'Infinix Note 40 Pro',
+        img: 'https://images.uzum.uz/cpu21pj5qt1gj8dd531g/original.jpg',
+        display: "6.78 Amoled - 1080 x 2436",
+        chip: "Mediatek Helio G99 Ultimate",
+        camera: "3 (108 MP + 2 MP + 2 MP)",
+        batery: "5000 мАч",
+        os: "Android 14",
+        ves: "190 г.",
+        memory: [{ name: "12/256", price: 251 }],
+        color: [{ name: "black" }, { name: "green" }, { name: "gold" }]
+    },
+    {
+        id: 49.5,
+        name: 'Infinix Note 12 2023',
+        img: 'https://cdn.citilink.ru/y-mERb_O3hEpHMox5LQw95LVXm4xeliyAfO3O7WAHqs/resizing_type:fit/gravity:sm/width:1200/height:1200/plain/product-images/39525d5d-114a-496e-bb51-ba46daea8e6a.jpg',
+        display: "6.78 Amoled - 1080 x 2436",
+        chip: "Mediatek Helio G99 Ultimate",
+        camera: "3 (108 MP + 2 MP + 2 MP)",
+        batery: "5000 мАч",
+        os: "Android 14",
+        ves: "190 г.",
+        memory: [{ name: "8/128", price: 160 }],
+        color: [{ name: "blue" }]
+    },
+    {
+        id: 49.6,
+        name: 'Infinix Note 30',
+        img: 'https://mini-io-api.texnomart.uz/catalog/product/3564/356444/194576/95d830ea-e975-489a-82c2-ca66b5e5523a.webp',
+        display: "6.78 LTPS LCD - 1080 x 2460",
+        chip: "Mediatek Helio G99",
+        camera: "3 (64 MP + 2 MP)",
+        batery: "5000 мАч",
+        os: "Android 14",
+        ves: "219 г.",
+        memory: [{ name: "4/128", price: 150 }],
+        color: [{ name: "black" }, { name: "green" }, { name: "gold" }]
     },
     {
         id: 50,
@@ -881,6 +959,19 @@ let phones = [
         memory: [{ name: "8/256", price: 263 }],
         color: [{ name: "black" }, { name: "white" }]
     },
+    // {
+    //     id: 72.1,
+    //     name: 'Honor 200',
+    //     img: 'https://assets.asaxiy.uz/product/items/desktop/1eb5ebb04433b728127f5f4d822901752024072414195343574ujqoMC1ZT1.webp',
+    //     display: "6.7 OLED - 1200 x 2664",
+    //     chip: "Snapdragon 7 Gen 3",
+    //     camera: "3 (50 MP + 50 MP + 12 MP)",
+    //     batery: "5200 мАч",
+    //     os: "Android 14",
+    //     ves: "187 г.",
+    //     memory: [{ name: "8/256", price: 263 }],
+    //     color: [{ name: "black" }, { name: "white" }]
+    // },
     {
         id: 73,
         name: 'Honor 90 Lite',
