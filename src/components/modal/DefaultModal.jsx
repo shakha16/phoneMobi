@@ -45,7 +45,7 @@ export default function DefaultModal({ item, setYes }) {
                                 item.memory.map(item => (
                                     <div className="flex items-center justify-between w-[35%]">
                                         <h1 className="font-bold bg-green-700 rounded p-1 text-white">{item.name}</h1>
-                                        <h1 onClick={() => console.log(item.price >= 1000 ? item.price + 70 : item.price >= 900 ? item.price + 60 : item.price >=  700 ? item.price + 50 : item.price >= 500 ? item.price + 30 : item.price + 19)} className="font-bold bg-green-700 rounded p-1 text-white flex">{((item.price >= 1000 ? item.price + 70 : item.price >= 900 ? item.price + 60 : item.price >=  700 ? item.price + 50 : item.price >= 500 ? item.price + 30 : item.price + 19) * curs).toLocaleString() + "UZS"}</h1>
+                                        <h1 onClick={() => console.log(item.price >= 1000 ? item.price + 60 : item.price >= 900 ? item.price + 60 : item.price >=  700 ? item.price + 50 : item.price >= 500 ? item.price + 30 : item.price + 19)} className="font-bold bg-green-700 rounded p-1 text-white flex">{((item.price >= 1000 ? item.price + 60 : item.price >= 900 ? item.price + 60 : item.price >=  700 ? item.price + 50 : item.price >= 500 ? item.price + 30 : item.price + 19) * curs).toLocaleString() + "UZS"}</h1>
                                     </div>
                                 ))
                             }
