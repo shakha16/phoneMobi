@@ -784,8 +784,8 @@ let phones = [
         camera: "4 (48 MP + 12 MP + 12 MP)",
         batery: "4441 мАч",
         os: "iOS 17.3",
-        ves: "221 г.",
-        memory: [{ name: "256gb", price: 1200 }, { name: "512gb", price: 1400 }, { name: "1tb", price: 1650 }],
+        ves: "221 г.",  
+        memory: [{ name: "256gb", price: 1230 }, { name: "512gb", price: 1400 }, { name: "1tb", price: 1650 }],
         color: [{ name: "black" }, { name: "blue" }, { name: "white" }, { name: "#B7A28B" }]
     },
     {
